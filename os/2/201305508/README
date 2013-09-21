@@ -1,0 +1,9 @@
+options implemented:
+----------------------
+­l : Long listing  format
+­R : Recursive
+­a : All
+­d : List  directory entries instead of contents
+­S : Sort by file size
+­t : Sort by modification time
+

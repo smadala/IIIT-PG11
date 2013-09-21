@@ -1,0 +1,6 @@
+echo ${a[@]} -> print array
+echo ${#array[@]} -> print size
+you can use * also
+
+ a=( $(echo $string))
+  

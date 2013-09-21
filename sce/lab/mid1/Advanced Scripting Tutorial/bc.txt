@@ -1,0 +1,130 @@
+addition
+
+$ echo '57+43' | bc
+
+100
+
+subtraction
+
+$ echo '57-43' | bc
+
+14
+
+multiplication
+
+$ echo '57*43' | bc
+
+2451
+
+scale
+
+The scale variable determines the number of digits which follow the decimal point in your result. By default, the value of the scale variable is zero. This can be set by declaring scale before your calculation, as in the following division example:
+division
+
+$ echo 'scale=25;57/43' | bc
+
+1.3255813953488372093023255
+
+square root
+
+$ echo 'scale=30;sqrt(2)' | bc
+
+1.414213562373095048801688724209
+
+This beats Google's calculator function which only calculates the result to 8 decimal places! ;-) Although Google's calculator function has this 8 decimal places limitation, it will allow imaginary numbers as answers.
+power
+
+$ echo '6^6' | bc
+
+46656
+------------------------------------
+parentheses
+
+$ echo '6^6^6' | bc
+
+You will get a screen full of numbers (some 37374 digits), not the
+
+10314424798490535546171949056
+
+that you might expect.
+
+
+That's because you typed the wrong question. You need to type:
+
+$ echo '(6^6)^6' | bc
+
+Whereas what you did type was interpreted as:
+
+$ echo '6^(6^6)' | bc
+
+which is an entirely different number altogether. So the positioning of parentheses (brackets to you and me!) is very important. I use brackets to separate the different components of my sums whenever possible, just eliminate any possible doubt that I may get the wrong answer. Consider the following calculations:
+
+$ echo '7+(6*5)' | bc
+
+$ echo '7+6*5' | bc
+
+$ echo '6*5+7' | bc
+
+They all give the same answer, 37, but I would have typed the first calculation, unless of course, I meant:
+
+$ echo '(7+6)*5' | bc
+
+Or to put it another way:
+
+$ echo '13*5' | bc
+
+which is 65.
+
+obase and ibase
+
+obase and ibase are special variables which define output and input base.
+
+Legitimate obase values range from 2 to 999, although anything beyond 16 is wasted on me!
+
+Legitimate ibase values range from 2 to 16.
+
+Some examples will explain all this better.
+convert from decimal to hexadecimal
+
+Here we're converting 255 from base 10 to base 16:
+
+$ echo 'obase=16;255' | bc
+
+FF
+
+convert from decimal to binary
+
+And here we're converting the number 12 from base 10 to base 2:
+
+$ echo 'obase=2;12' | bc
+
+1100
+
+Which reminds me of the old joke:
+
+There are only 10 types of people in the world -- those who understand binary, and those who don't.
+
+Which leads us neatly onto the next example:
+convert from binary to decimal
+
+Here we're converting the binary number 10 to a base 10 (decimal) number.
+
+$ echo 'ibase=2;obase=A;10' | bc
+
+2
+
+Note that the obase is "A" and not "10". Sorry, you've got to learn some hex. The reason for this is you've set the ibase to "2", so if you now had tried to use "10" as the value for the obase, it would stay as "2", because "10" in base 2 is "2". So you need to use hex to "break out" of binary mode.
+
+Well, that was just to explain the joke; now something a bit more challenging:
+
+$ echo 'ibase=2;obase=A;10000001' | bc
+
+129
+
+convert from hexadecimal to decimal
+
+$ echo 'ibase=16;obase=A;FF' | bc
+
+255
+
+Again, note the use of "A" to denote base 10. That is because "10" in hex (base 16 - the ibase value) is 16. 

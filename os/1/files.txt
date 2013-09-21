@@ -1,0 +1,19 @@
+total 340
+drwxrwxr-x 6 satya satya   4096 Aug 25 12:16 asgn
+-rw-rw-r-- 1 satya satya    681 Aug 20 17:08 c_t.c
+drwxr-xr-x 2 satya satya   4096 Sep  3 17:29 Desktop
+drwx------ 2 satya satya   4096 Aug  7 12:08 directory
+-rw-r--r-- 1 satya satya  15362 Aug 18 21:17 dma2.odt
+-rw-r--r-- 1 satya satya  15916 Aug 18 21:17 dma lecture notes.odt
+drwxr-xr-x 4 satya satya   4096 Aug 23 17:05 Documents
+drwxr-xr-x 8 satya satya   4096 Sep  5 15:00 Downloads
+-rw-r--r-- 1 satya satya   8445 Aug  1 22:03 examples.desktop
+-rw-rw-r-- 1 satya satya 210649 Aug 10 00:50 JAT_OGL_10thAug.pdf
+-rw-rw-r-- 1 satya satya    316 Aug 18 14:41 missfont.log
+drwxr-xr-x 2 satya satya   4096 Aug  1 22:07 Music
+drwxr-xr-x 2 satya satya   4096 Sep  1 14:01 Pictures
+drwxr-xr-x 2 satya satya   4096 Aug  1 22:07 Public
+-rw-rw-r-- 1 satya satya  34123 Aug 22 13:32 ravi.pdf
+drwxr-xr-x 2 satya satya   4096 Aug  1 22:07 Templates
+drwxrwxr-x 2 satya satya   4096 Aug  4 21:29 Ubuntu One
+drwxr-xr-x 2 satya satya   4096 Aug  1 22:07 Videos

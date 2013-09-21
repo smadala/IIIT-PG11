@@ -1,0 +1,692 @@
+Script started on Sunday 01 September 2013 01:57:50 PM IST
+]0;satya@Satya-PC: ~/asgn/sce/a/2satya@Satya-PC:~/asgn/sce/a/2$ ls
+10.txt  3.txt  9.txt                   practice_big.txt          typescript_big
+11.txt  4.txt  a_11.txt                practice.txt
+12.txt  5.txt  a_9_big.txt             SCEAssignment2V3_big.pdf
+1.txt   6.txt  [0m[01;31mAssignment2_big.tar.gz[0m  test.txt
+2.txt   7.txt  employee.txt            typescript
+]0;satya@Satya-PC: ~/asgn/sce/a/2satya@Satya-PC:~/asgn/sce/a/2$ lsexit[1Pxitexit[2Pls[Ksript [K[K[K[K[Kcript -a typescript_big 
+Script started, file is typescript_big
+]0;satya@Satya-PC: ~/asgn/sce/a/2satya@Satya-PC:~/asgn/sce/a/2$ tail typescript_big 
+
+]0;satya@Satya-PC: ~/asgn/sce/a/2satya@Satya-PC:~/asgn/sce/a/2$ sed 's_\(.\)\1\+_\1_g' 7.txt
+abc
+asdf asaca werae
+asfa s dsdfs
+
+]0;satya@Satya-PC: ~/asgn/sce/a/2satya@Satya-PC:~/asgn/sce/a/2$ exit
+exit
+
+Script done on Saturday 31 August 2013 05:26:45 PM IST
+]0;satya@Satya-PC: ~/asgn/sce/a/2satya@Satya-PC:~/asgn/sce/a/2$ [K]0;satya@Satya-PC: ~/asgn/sce/a/2satya@Satya-PC:~/asgn/sce/a/2$  ls -lS | awk '{if ($5>1000 && $1 ~ /^-/) { print $9}};'|awk -F. '{ printf("mv %s %s_big",$0,$1); for(i=2;i<=NF; i++) {printf("%s%s",FS,$i) }{printf("\n")}}'|awk '{system($0)}'
+]0;satya@Satya-PC: ~/asgn/sce/a/2satya@Satya-PC:~/asgn/sce/a/2$ ls
+10.txt  1.txt  4.txt  7.txt     a_9_big_big.txt             practice_big_big.txt          test.txt
+11.txt  2.txt  5.txt  9.txt     [0m[01;31mAssignment2_big_big.tar.gz[0m  practice_big.txt              typescript
+12.txt  3.txt  6.txt  a_11.txt  employee.txt                SCEAssignment2V3_big_big.pdf  typescript_big_big
+]0;satya@Satya-PC: ~/asgn/sce/a/2satya@Satya-PC:~/asgn/sce/a/2$ lstail typescript_big ls[K[Kexit
+exit
+Script done, file is typescript_big
+]0;satya@Satya-PC: ~/asgn/sce/a/2satya@Satya-PC:~/asgn/sce/a/2$ do[K[Kscript typescript_big_big 
+Script started, file is typescript_big_big
+]0;satya@Satya-PC: ~/asgn/sce/a/2satya@Satya-PC:~/asgn/sce/a/2$ ls typescript
+typescript
+]0;satya@Satya-PC: ~/asgn/sce/a/2satya@Satya-PC:~/asgn/sce/a/2$ ls typescript-typescriptltypescript typescript[C[C[C[C[C[C[C[C[C[C_big_big 
+-rw-rw-r-- 1 satya satya 0 Sep  1 13:59 typescript_big_big
+]0;satya@Satya-PC: ~/asgn/sce/a/2satya@Satya-PC:~/asgn/sce/a/2$ tail typescript_big_big 
+]0;satya@Satya-PC: ~/asgn/sce/a/2satya@Satya-PC:~/asgn/sce/a/2$ tail typescript_big_big [1@ls -[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[12Ptypescriptexit[K[2Plstail typescript_big exit[K[1Pxit[1Pls[K[Ktype scri[K[K[K[K[K[K[K[K[Kscripe[Kr[Kt 201350508.script
+Script started, file is 201350508.script
+]0;satya@Satya-PC: ~/asgn/sce/a/2satya@Satya-PC:~/asgn/sce/a/2$ grep -i -E '^[a-z0-9]+@[a-z0-9]+\.(com|org|ac\.in|edu)' 1.txt
+[01;31m[Kcse@iiit.ac.in[m[K
+[01;31m[Kxyz@gmail.com[m[K
+[01;31m[KXYZ@GMAIL.COM[m[K
+[01;31m[Kgr8@stanford.edu[m[K
+]0;satya@Satya-PC: ~/asgn/sce/a/2satya@Satya-PC:~/asgn/sce/a/2$ grep -w -E '([0-9]{1,3}.){3}[0-9]{1,3}$' 2.txt
+[01;31m[K10.2.40.95[m[K
+[01;31m[K0.0.0.0[m[K
+[01;31m[K127.127.127.1[m[K
+[01;31m[K10.10.10.10[m[K
+[01;31m[K1.1.1.1[m[K
+[01;31m[K256.256.256.256[m[K
+[01;31m[K10.2.3.4[m[K
+]0;satya@Satya-PC: ~/asgn/sce/a/2satya@Satya-PC:~/asgn/sce/a/2$ grep -E '([0-9]{1,3})(\.\1){3}' 2.txt
+[01;31m[K0.0.0.0[m[K
+[01;31m[K10.10.10.10[m[K
+[01;31m[K1.1.1.1[m[K
+[01;31m[K256.256.256.256[m[K
+]0;satya@Satya-PC: ~/asgn/sce/a/2satya@Satya-PC:~/asgn/sce/a/2$ grep -w -E '((([0-9]|[1-9][0-9]|1[0-9][0-9]|2[0-4][0-9]|25[0-5])\.){3}([0-9]|[1-9][0-9]|1[0-9][0-9]|2[0-4][0-9]| 25[0-5]))'
+^C
+]0;satya@Satya-PC: ~/asgn/sce/a/2satya@Satya-PC:~/asgn/sce/a/2$ grep -w -E '((([0-9]|[1-9][0-9]|1[0-9][0-9]|2[0-4][0-9]|25[0-5])\.){3}([0-9]|[1-9][0-9]|1[0-9][0-9]|2[0-4][0-9]|225[0-5]))' 2.txt 
+[01;31m[K10.2.40.95[m[K
+[01;31m[K0.0.0.0[m[K
+[01;31m[K127.127.127.1[m[K
+[01;31m[K10.10.10.10[m[K
+[01;31m[K1.1.1.1[m[K
+[01;31m[K10.2.3.4[m[K
+]0;satya@Satya-PC: ~/asgn/sce/a/2satya@Satya-PC:~/asgn/sce/a/2$ grep -E '^(.).*\1$' 3.txt
+[01;31m[Kthis is a test line for you to test[m[K
+[01;31m[KAThis is a test line for you to testA[m[K
+[01;31m[Kthis is a test line for you to test hhhhhhhht[m[K
+[01;31m[Kaaaaaaaaaaaa[m[K
+[01;31m[KAazzzzzzaA[m[K
+]0;satya@Satya-PC: ~/asgn/sce/a/2satya@Satya-PC:~/asgn/sce/a/2$ grep  -E '^.(.).*\1.$' 3.txt
+[01;31m[Kthis is a test line for you to test hhhhhhhht[m[K
+[01;31m[Kaaaaaaaaaaaa[m[K
+[01;31m[KAazzzzzzaA[m[K
+]0;satya@Satya-PC: ~/asgn/sce/a/2satya@Satya-PC:~/asgn/sce/a/2$  grep -i -E '^<(..)>.*</\1>$' 4.txt
+[01;31m[K<h1>HEADING1</h1>[m[K
+[01;31m[K<h1>HEADING1</H1>[m[K
+[01;31m[K<h2>HEADING1</h2>[m[K
+[01;31m[K<h6>HEADING1</h6>[m[K
+[01;31m[K<h7>HEADING1</H7>[m[K
+]0;satya@Satya-PC: ~/asgn/sce/a/2satya@Satya-PC:~/asgn/sce/a/2$ grep -E '^('\''|//|#)' 5.txt
+[01;31m[K//[m[KThis is a comment
+[01;31m[K'[m[KThis is a comment
+[01;31m[K'[m[K#This is a comment
+[01;31m[K#[m[KThis is a comment
+]0;satya@Satya-PC: ~/asgn/sce/a/2satya@Satya-PC:~/asgn/sce/a/2$ grep -E -v '^('\''|//|#)' 5.txt
+This is the first line
+This is not a comment
+/This is not a comment/
+/This is also not a comment
+is this a comment#
+is this not a // comment
+]0;satya@Satya-PC: ~/asgn/sce/a/2satya@Satya-PC:~/asgn/sce/a/2$ grep -E '^[A-Z]{2}\s[0-9]{2}\s[A-Z]{2}\s[0-9]{1,4}$' 6.txt
+[01;31m[KMH 15 BH 6549[m[K
+[01;31m[KMH 12 CJ 2239[m[K
+]0;satya@Satya-PC: ~/asgn/sce/a/2satya@Satya-PC:~/asgn/sce/a/2$ sed 's_\(.\)\1\+_\1_g' 7.txt
+abc
+asdf asaca werae
+asfa s dsdfs
+
+]0;satya@Satya-PC: ~/asgn/sce/a/2satya@Satya-PC:~/asgn/sce/a/2$ find ~ -cmin -600 -type f
+/home/satya/asgn/sce/a/2/.201350508_commands.txt.swp
+/home/satya/asgn/sce/a/2/practice_big.txt
+/home/satya/asgn/sce/a/2/typescript
+/home/satya/asgn/sce/a/2/a_9_big_big.txt
+/home/satya/asgn/sce/a/2/201350508_explaination.txt
+/home/satya/asgn/sce/a/2/Assignment2_big_big.tar.gz
+/home/satya/asgn/sce/a/2/201350508.script
+/home/satya/asgn/sce/a/2/SCEAssignment2V3_big_big.pdf
+/home/satya/asgn/sce/a/2/typescript_big_big
+/home/satya/asgn/sce/a/2/201350508_commands.txt
+/home/satya/asgn/sce/a/2/practice_big_big.txt
+/home/satya/.xsession-errors
+/home/satya/.gstreamer-0.10/registry.x86_64.bin
+/home/satya/.pulse/ccc333826b91d6a19d6334f60000000a-default-source
+/home/satya/.pulse/ccc333826b91d6a19d6334f60000000a-device-volumes.tdb
+/home/satya/.pulse/ccc333826b91d6a19d6334f60000000a-default-sink
+/home/satya/.ICEauthority
+/home/satya/.gnome2/keyrings/login.keyring
+/home/satya/.local/share/telepathy/mission-control/accounts-goa.cfg
+/home/satya/.local/share/recently-used.xbel
+/home/satya/.local/share/zeitgeist/fts.index/flintlock
+/home/satya/.local/share/zeitgeist/activity.sqlite-shm
+/home/satya/.local/share/zeitgeist/activity.sqlite-wal
+/home/satya/.local/share/gvfs-metadata/home-6733b3bb.log
+/home/satya/.local/share/gvfs-metadata/root-021506eb.log
+/home/satya/.local/share/gvfs-metadata/home
+/home/satya/.bash_history
+/home/satya/.xsession-errors.old
+/home/satya/.macromedia/Flash_Player/#SharedObjects/W3TQSCBF/s.ytimg.com/soundData.sol
+/home/satya/Pictures/Screenshot from 2013-09-01 14:01:10.png
+/home/satya/.dmrc
+/home/satya/.gconf/apps/nautilus/preferences/%gconf.xml
+/home/satya/.gconf/apps/gnome-terminal/profiles/Default/%gconf.xml
+/home/satya/.gconf/apps/gnome-terminal/profiles/Profile0/%gconf.xml
+/home/satya/.gconf/apps/eog/ui/%gconf.xml
+/home/satya/.gconf/apps/eog/view/%gconf.xml
+/home/satya/.dbus/session-bus/ccc333826b91d6a19d6334f60000000a-0
+/home/satya/.viminfo
+/home/satya/.mozilla/firefox/4oy18fm0.default/urlclassifierkey3.txt
+/home/satya/.mozilla/firefox/4oy18fm0.default/sessionstore.bak
+/home/satya/.mozilla/firefox/4oy18fm0.default/healthreport.sqlite-wal
+/home/satya/.mozilla/firefox/4oy18fm0.default/webappsstore.sqlite-wal
+/home/satya/.mozilla/firefox/4oy18fm0.default/cookies.sqlite-shm
+/home/satya/.mozilla/firefox/4oy18fm0.default/.parentlock
+/home/satya/.mozilla/firefox/4oy18fm0.default/webapps/webapps.json
+/home/satya/.mozilla/firefox/4oy18fm0.default/sessionstore.js
+/home/satya/.mozilla/firefox/4oy18fm0.default/prefs.js
+/home/satya/.mozilla/firefox/4oy18fm0.default/places.sqlite-wal
+/home/satya/.mozilla/firefox/4oy18fm0.default/signons.sqlite
+/home/satya/.mozilla/firefox/4oy18fm0.default/formhistory.sqlite
+/home/satya/.mozilla/firefox/4oy18fm0.default/healthreport.sqlite-shm
+/home/satya/.mozilla/firefox/4oy18fm0.default/places.sqlite-shm
+/home/satya/.mozilla/firefox/4oy18fm0.default/cookies.sqlite
+/home/satya/.mozilla/firefox/4oy18fm0.default/places.sqlite
+/home/satya/.mozilla/firefox/4oy18fm0.default/permissions.sqlite
+/home/satya/.mozilla/firefox/4oy18fm0.default/webappsstore.sqlite-shm
+/home/satya/.mozilla/firefox/4oy18fm0.default/cookies.sqlite-wal
+/home/satya/.cache/chromium/Default/Media Cache/index
+/home/satya/.cache/chromium/Default/Media Cache/data_3
+/home/satya/.cache/chromium/Default/Media Cache/data_0
+/home/satya/.cache/chromium/Default/Media Cache/data_2
+/home/satya/.cache/chromium/Default/Media Cache/data_1
+/home/satya/.cache/chromium/Default/Cache/f_006e9d
+/home/satya/.cache/chromium/Default/Cache/f_006eff
+/home/satya/.cache/chromium/Default/Cache/f_006eec
+/home/satya/.cache/chromium/Default/Cache/f_006f02
+/home/satya/.cache/chromium/Default/Cache/f_006ebc
+/home/satya/.cache/chromium/Default/Cache/f_006f3c
+/home/satya/.cache/chromium/Default/Cache/f_006efe
+/home/satya/.cache/chromium/Default/Cache/f_006f49
+/home/satya/.cache/chromium/Default/Cache/f_006f48
+/home/satya/.cache/chromium/Default/Cache/f_006f5e
+/home/satya/.cache/chromium/Default/Cache/f_006eb3
+/home/satya/.cache/chromium/Default/Cache/f_006ec6
+/home/satya/.cache/chromium/Default/Cache/f_006ee7
+/home/satya/.cache/chromium/Default/Cache/f_006ebd
+/home/satya/.cache/chromium/Default/Cache/f_006f4f
+/home/satya/.cache/chromium/Default/Cache/f_006e88
+/home/satya/.cache/chromium/Default/Cache/f_006edf
+/home/satya/.cache/chromium/Default/Cache/f_006edb
+/home/satya/.cache/chromium/Default/Cache/f_006ef4
+/home/satya/.cache/chromium/Default/Cache/f_006edc
+/home/satya/.cache/chromium/Default/Cache/f_006eb1
+/home/satya/.cache/chromium/Default/Cache/f_006ef9
+/home/satya/.cache/chromium/Default/Cache/f_006f69
+/home/satya/.cache/chromium/Default/Cache/f_006f01
+/home/satya/.cache/chromium/Default/Cache/f_006f5c
+/home/satya/.cache/chromium/Default/Cache/f_006eb5
+/home/satya/.cache/chromium/Default/Cache/f_006f07
+/home/satya/.cache/chromium/Default/Cache/f_006f13
+/home/satya/.cache/chromium/Default/Cache/f_006ee3
+/home/satya/.cache/chromium/Default/Cache/f_006ecb
+/home/satya/.cache/chromium/Default/Cache/f_006f5a
+/home/satya/.cache/chromium/Default/Cache/f_006eef
+/home/satya/.cache/chromium/Default/Cache/f_006eae
+/home/satya/.cache/chromium/Default/Cache/f_006f62
+/home/satya/.cache/chromium/Default/Cache/f_006ee0
+/home/satya/.cache/chromium/Default/Cache/f_006f3f
+/home/satya/.cache/chromium/Default/Cache/f_006f3a
+/home/satya/.cache/chromium/Default/Cache/f_006efb
+/home/satya/.cache/chromium/Default/Cache/f_006f12
+/home/satya/.cache/chromium/Default/Cache/f_006ec5
+/home/satya/.cache/chromium/Default/Cache/f_006ec4
+/home/satya/.cache/chromium/Default/Cache/f_006efa
+/home/satya/.cache/chromium/Default/Cache/f_006f24
+/home/satya/.cache/chromium/Default/Cache/f_006ecf
+/home/satya/.cache/chromium/Default/Cache/f_006ec3
+/home/satya/.cache/chromium/Default/Cache/f_006f16
+/home/satya/.cache/chromium/Default/Cache/f_006f23
+/home/satya/.cache/chromium/Default/Cache/f_006f39
+/home/satya/.cache/chromium/Default/Cache/index
+/home/satya/.cache/chromium/Default/Cache/f_006e9b
+/home/satya/.cache/chromium/Default/Cache/f_006f3d
+/home/satya/.cache/chromium/Default/Cache/f_006ea5
+/home/satya/.cache/chromium/Default/Cache/f_006f21
+/home/satya/.cache/chromium/Default/Cache/f_006e97
+/home/satya/.cache/chromium/Default/Cache/f_006f46
+/home/satya/.cache/chromium/Default/Cache/f_006f61
+/home/satya/.cache/chromium/Default/Cache/f_006ec2
+/home/satya/.cache/chromium/Default/Cache/f_006ed0
+/home/satya/.cache/chromium/Default/Cache/f_006f5f
+/home/satya/.cache/chromium/Default/Cache/f_006f6e
+/home/satya/.cache/chromium/Default/Cache/f_006e8e
+/home/satya/.cache/chromium/Default/Cache/data_3
+/home/satya/.cache/chromium/Default/Cache/f_006efd
+/home/satya/.cache/chromium/Default/Cache/f_006f4e
+/home/satya/.cache/chromium/Default/Cache/f_006f66
+/home/satya/.cache/chromium/Default/Cache/f_006e8b
+/home/satya/.cache/chromium/Default/Cache/f_006eed
+/home/satya/.cache/chromium/Default/Cache/f_006ecc
+/home/satya/.cache/chromium/Default/Cache/f_006f22
+/home/satya/.cache/chromium/Default/Cache/f_006ef6
+/home/satya/.cache/chromium/Default/Cache/f_006f41
+/home/satya/.cache/chromium/Default/Cache/f_006e92
+/home/satya/.cache/chromium/Default/Cache/f_006ee6
+/home/satya/.cache/chromium/Default/Cache/f_006eeb
+/home/satya/.cache/chromium/Default/Cache/f_006ee1
+/home/satya/.cache/chromium/Default/Cache/f_006f59
+/home/satya/.cache/chromium/Default/Cache/f_006f50
+/home/satya/.cache/chromium/Default/Cache/f_006f18
+/home/satya/.cache/chromium/Default/Cache/f_006f76
+/home/satya/.cache/chromium/Default/Cache/f_006ec9
+/home/satya/.cache/chromium/Default/Cache/f_006f35
+/home/satya/.cache/chromium/Default/Cache/f_006e99
+/home/satya/.cache/chromium/Default/Cache/f_006ef1
+/home/satya/.cache/chromium/Default/Cache/f_006eb6
+/home/satya/.cache/chromium/Default/Cache/f_006f04
+/home/satya/.cache/chromium/Default/Cache/f_006e8a
+/home/satya/.cache/chromium/Default/Cache/f_006ece
+/home/satya/.cache/chromium/Default/Cache/f_006eb8
+/home/satya/.cache/chromium/Default/Cache/f_006f3e
+/home/satya/.cache/chromium/Default/Cache/f_006e98
+/home/satya/.cache/chromium/Default/Cache/f_006f65
+/home/satya/.cache/chromium/Default/Cache/f_006f4c
+/home/satya/.cache/chromium/Default/Cache/f_006f44
+/home/satya/.cache/chromium/Default/Cache/f_006f45
+/home/satya/.cache/chromium/Default/Cache/data_0
+/home/satya/.cache/chromium/Default/Cache/f_006f6a
+/home/satya/.cache/chromium/Default/Cache/f_006f36
+/home/satya/.cache/chromium/Default/Cache/f_006f6b
+/home/satya/.cache/chromium/Default/Cache/f_006eee
+/home/satya/.cache/chromium/Default/Cache/f_006ee2
+/home/satya/.cache/chromium/Default/Cache/f_006ee4
+/home/satya/.cache/chromium/Default/Cache/f_006ee5
+/home/satya/.cache/chromium/Default/Cache/f_006eb0
+/home/satya/.cache/chromium/Default/Cache/f_006eb4
+/home/satya/.cache/chromium/Default/Cache/f_006ebb
+/home/satya/.cache/chromium/Default/Cache/f_006ef5
+/home/satya/.cache/chromium/Default/Cache/f_006e89
+/home/satya/.cache/chromium/Default/Cache/data_2
+/home/satya/.cache/chromium/Default/Cache/f_006eb2
+/home/satya/.cache/chromium/Default/Cache/f_006f6f
+/home/satya/.cache/chromium/Default/Cache/f_006ef2
+/home/satya/.cache/chromium/Default/Cache/f_006e9a
+/home/satya/.cache/chromium/Default/Cache/f_006e8f
+/home/satya/.cache/chromium/Default/Cache/f_006f14
+/home/satya/.cache/chromium/Default/Cache/f_006ecd
+/home/satya/.cache/chromium/Default/Cache/f_006ef8
+/home/satya/.cache/chromium/Default/Cache/f_006eca
+/home/satya/.cache/chromium/Default/Cache/f_006ef7
+/home/satya/.cache/chromium/Default/Cache/f_006ef0
+/home/satya/.cache/chromium/Default/Cache/f_006eaf
+/home/satya/.cache/chromium/Default/Cache/f_006eb7
+/home/satya/.cache/chromium/Default/Cache/f_006ed1
+/home/satya/.cache/chromium/Default/Cache/f_006ec0
+/home/satya/.cache/chromium/Default/Cache/f_006f06
+/home/satya/.cache/chromium/Default/Cache/f_006f15
+/home/satya/.cache/chromium/Default/Cache/f_006f64
+/home/satya/.cache/chromium/Default/Cache/f_006eba
+/home/satya/.cache/chromium/Default/Cache/f_006f00
+/home/satya/.cache/chromium/Default/Cache/f_006ef3
+/home/satya/.cache/chromium/Default/Cache/f_006f71
+/home/satya/.cache/chromium/Default/Cache/f_006e95
+/home/satya/.cache/chromium/Default/Cache/f_006e93
+/home/satya/.cache/chromium/Default/Cache/f_006f43
+/home/satya/.cache/chromium/Default/Cache/f_006ede
+/home/satya/.cache/chromium/Default/Cache/f_006e8c
+/home/satya/.cache/chromium/Default/Cache/f_006ebe
+/home/satya/.cache/chromium/Default/Cache/f_006f03
+/home/satya/.cache/chromium/Default/Cache/f_006f47
+/home/satya/.cache/chromium/Default/Cache/f_006ebf
+/home/satya/.cache/chromium/Default/Cache/f_006edd
+/home/satya/.cache/chromium/Default/Cache/f_006f42
+/home/satya/.cache/chromium/Default/Cache/f_006ed2
+/home/satya/.cache/chromium/Default/Cache/f_006ec7
+/home/satya/.cache/chromium/Default/Cache/f_006ee9
+/home/satya/.cache/chromium/Default/Cache/f_006ec1
+/home/satya/.cache/chromium/Default/Cache/f_006f5d
+/home/satya/.cache/chromium/Default/Cache/f_006f37
+/home/satya/.cache/chromium/Default/Cache/f_006eb9
+/home/satya/.cache/chromium/Default/Cache/f_006f38
+/home/satya/.cache/chromium/Default/Cache/f_006ee8
+/home/satya/.cache/chromium/Default/Cache/f_006eea
+/home/satya/.cache/chromium/Default/Cache/f_006efc
+/home/satya/.cache/chromium/Default/Cache/data_1
+/home/satya/.cache/chromium/Default/Cache/f_006e96
+/home/satya/.cache/chromium/Default/Cache/f_006f3b
+/home/satya/.cache/chromium/Default/Cache/f_006ec8
+/home/satya/.cache/chromium/Default/Cache/f_006f51
+/home/satya/.cache/chromium/Default/Cache/f_006e9c
+/home/satya/.cache/chromium/Default/Cache/f_006f40
+/home/satya/.cache/chromium/Default/Cache/f_006f63
+/home/satya/.cache/chromium/Default/Cache/f_006f05
+/home/satya/.cache/dconf/user
+/home/satya/.cache/software-center/reviews.ubuntu.com_reviews_api_1.0_review-stats-pkgnames.p__5.1.db.dbenv/__db.001
+/home/satya/.cache/software-center/reviews.ubuntu.com_reviews_api_1.0_review-stats-pkgnames.p__5.1.db.dbenv/__db.004
+/home/satya/.cache/software-center/reviews.ubuntu.com_reviews_api_1.0_review-stats-pkgnames.p__5.1.db.dbenv/__db.002
+/home/satya/.cache/software-center/reviews.ubuntu.com_reviews_api_1.0_review-stats-pkgnames.p__5.1.db.dbenv/__db.003
+/home/satya/.cache/unity-lens-video/videos.db
+/home/satya/.cache/sso/sso-client.log
+/home/satya/.cache/mozilla/firefox/4oy18fm0.default/safebrowsing/goog-phish-shavar.sbstore
+/home/satya/.cache/mozilla/firefox/4oy18fm0.default/safebrowsing/test-malware-simple.pset
+/home/satya/.cache/mozilla/firefox/4oy18fm0.default/safebrowsing/goog-phish-shavar.cache
+/home/satya/.cache/mozilla/firefox/4oy18fm0.default/safebrowsing/goog-malware-shavar.sbstore
+/home/satya/.cache/mozilla/firefox/4oy18fm0.default/safebrowsing/test-phish-simple.cache
+/home/satya/.cache/mozilla/firefox/4oy18fm0.default/safebrowsing/goog-malware-shavar.pset
+/home/satya/.cache/mozilla/firefox/4oy18fm0.default/safebrowsing/test-malware-simple.cache
+/home/satya/.cache/mozilla/firefox/4oy18fm0.default/safebrowsing/test-phish-simple.pset
+/home/satya/.cache/mozilla/firefox/4oy18fm0.default/safebrowsing/test-phish-simple.sbstore
+/home/satya/.cache/mozilla/firefox/4oy18fm0.default/safebrowsing/test-malware-simple.sbstore
+/home/satya/.cache/mozilla/firefox/4oy18fm0.default/safebrowsing/goog-phish-shavar.pset
+/home/satya/.cache/mozilla/firefox/4oy18fm0.default/safebrowsing/goog-malware-shavar.cache
+/home/satya/.cache/mozilla/firefox/4oy18fm0.default/_CACHE_CLEAN_
+/home/satya/.cache/mozilla/firefox/4oy18fm0.default/thumbnails/1c5543dc929a477a00ad05d1e5ebd692.png
+/home/satya/.cache/mozilla/firefox/4oy18fm0.default/thumbnails/9cd85ac82b731b7697042916a934caf0.png
+/home/satya/.cache/mozilla/firefox/4oy18fm0.default/thumbnails/3d5b7a6d49016f6ad93705a1e10f8d21.png
+/home/satya/.cache/mozilla/firefox/4oy18fm0.default/Cache/3/1D/54EC9d01
+/home/satya/.cache/mozilla/firefox/4oy18fm0.default/Cache/3/AC/25713d01
+/home/satya/.cache/mozilla/firefox/4oy18fm0.default/Cache/_CACHE_MAP_
+/home/satya/.cache/mozilla/firefox/4oy18fm0.default/Cache/8/86/C673Ed01
+/home/satya/.cache/mozilla/firefox/4oy18fm0.default/Cache/_CACHE_002_
+/home/satya/.cache/mozilla/firefox/4oy18fm0.default/Cache/_CACHE_001_
+/home/satya/.cache/mozilla/firefox/4oy18fm0.default/Cache/_CACHE_003_
+/home/satya/.cache/ubuntuone/log/syncdaemon-exceptions.log.2013-09-01_09-25-12
+/home/satya/.cache/ubuntuone/log/syncdaemon-exceptions.log.2013-09-01_01-10-35
+/home/satya/.cache/ubuntuone/log/syncdaemon.log.2013-09-01_01-10-35
+/home/satya/.cache/ubuntuone/log/credentials.log
+/home/satya/.cache/ubuntuone/log/syncdaemon.log.2013-09-01_13-50-21
+/home/satya/.cache/ubuntuone/log/syncdaemon-exceptions.log.2013-09-01_12-50-21
+/home/satya/.cache/ubuntuone/log/syncdaemon-exceptions.log
+/home/satya/.cache/ubuntuone/log/syncdaemon.log
+/home/satya/.cache/ubuntuone/log/syncdaemon.log.2013-09-01_09-25-12
+/home/satya/.gtk-bookmarks
+/home/satya/.Xauthority
+/home/satya/.config/chromium/Safe Browsing Bloom Prefix Set
+/home/satya/.config/chromium/Safe Browsing Bloom
+/home/satya/.config/chromium/Local State
+/home/satya/.config/chromium/Safe Browsing Cookies-journal
+/home/satya/.config/chromium/Safe Browsing Extension Blacklist
+/home/satya/.config/chromium/Safe Browsing Download
+/home/satya/.config/chromium/Safe Browsing Download Whitelist
+/home/satya/.config/chromium/Default/Shortcuts
+/home/satya/.config/chromium/Default/Extension Cookies
+/home/satya/.config/chromium/Default/Last Session
+/home/satya/.config/chromium/Default/Shortcuts-journal
+/home/satya/.config/chromium/Default/Sync Data/SyncData.sqlite3
+/home/satya/.config/chromium/Default/Sync Data/SyncData.sqlite3-journal
+/home/satya/.config/chromium/Default/Network Action Predictor-journal
+/home/satya/.config/chromium/Default/Last Tabs
+/home/satya/.config/chromium/Default/Web Data-journal
+/home/satya/.config/chromium/Default/Favicons-journal
+/home/satya/.config/chromium/Default/Current Session
+/home/satya/.config/chromium/Default/Top Sites-journal
+/home/satya/.config/chromium/Default/TransportSecurity
+/home/satya/.config/chromium/Default/Cookies-journal
+/home/satya/.config/chromium/Default/GPUCache/index
+/home/satya/.config/chromium/Default/GPUCache/data_1
+/home/satya/.config/chromium/Default/databases/chrome-extension_mijlebbfndhelmdpmllgcfadlkankhok_0/1
+/home/satya/.config/chromium/Default/Top Sites
+/home/satya/.config/chromium/Default/Extension State/MANIFEST-000243
+/home/satya/.config/chromium/Default/Extension State/000245.log
+/home/satya/.config/chromium/Default/Extension State/CURRENT
+/home/satya/.config/chromium/Default/Extension State/LOG
+/home/satya/.config/chromium/Default/Extension State/000241.sst
+/home/satya/.config/chromium/Default/Extension State/000244.sst
+/home/satya/.config/chromium/Default/Extension State/LOG.old
+/home/satya/.config/chromium/Default/History Index 2013-08
+/home/satya/.config/chromium/Default/Network Action Predictor
+/home/satya/.config/chromium/Default/Visited Links
+/home/satya/.config/chromium/Default/QuotaManager-journal
+/home/satya/.config/chromium/Default/History Index 2013-09
+/home/satya/.config/chromium/Default/Current Tabs
+/home/satya/.config/chromium/Default/History Provider Cache
+/home/satya/.config/chromium/Default/Login Data-journal
+/home/satya/.config/chromium/Default/Bookmarks.bak
+/home/satya/.config/chromium/Default/File System/Origins/CURRENT
+/home/satya/.config/chromium/Default/File System/Origins/LOG
+/home/satya/.config/chromium/Default/File System/Origins/LOG.old
+/home/satya/.config/chromium/Default/File System/Origins/000522.log
+/home/satya/.config/chromium/Default/File System/Origins/MANIFEST-000521
+/home/satya/.config/chromium/Default/File System/000/p/00/00000000
+/home/satya/.config/chromium/Default/File System/000/p/Paths/CURRENT
+/home/satya/.config/chromium/Default/File System/000/p/Paths/LOG
+/home/satya/.config/chromium/Default/File System/000/p/Paths/MANIFEST-000511
+/home/satya/.config/chromium/Default/File System/000/p/Paths/LOG.old
+/home/satya/.config/chromium/Default/File System/000/p/Paths/000512.log
+/home/satya/.config/chromium/Default/File System/000/p/.usage
+/home/satya/.config/chromium/Default/Local Extension Settings/abjcfabbhafbcdfjoecdgepllmpfceif/MANIFEST-000169
+/home/satya/.config/chromium/Default/Local Extension Settings/abjcfabbhafbcdfjoecdgepllmpfceif/CURRENT
+/home/satya/.config/chromium/Default/Local Extension Settings/abjcfabbhafbcdfjoecdgepllmpfceif/LOG
+/home/satya/.config/chromium/Default/Local Extension Settings/abjcfabbhafbcdfjoecdgepllmpfceif/000170.log
+/home/satya/.config/chromium/Default/Local Extension Settings/abjcfabbhafbcdfjoecdgepllmpfceif/LOG.old
+/home/satya/.config/chromium/Default/History
+/home/satya/.config/chromium/Default/Session Storage/MANIFEST-000353
+/home/satya/.config/chromium/Default/Session Storage/000357.log
+/home/satya/.config/chromium/Default/Session Storage/CURRENT
+/home/satya/.config/chromium/Default/Session Storage/LOG
+/home/satya/.config/chromium/Default/Session Storage/000359.sst
+/home/satya/.config/chromium/Default/Session Storage/LOG.old
+/home/satya/.config/chromium/Default/Web Data
+/home/satya/.config/chromium/Default/History Index 2013-08-journal
+/home/satya/.config/chromium/Default/History-journal
+/home/satya/.config/chromium/Default/Preferences
+/home/satya/.config/chromium/Default/Cookies
+/home/satya/.config/chromium/Default/Extension Cookies-journal
+/home/satya/.config/chromium/Default/Login Data
+/home/satya/.config/chromium/Default/QuotaManager
+/home/satya/.config/chromium/Default/Local Storage/http_disqus.com_0.localstorage
+/home/satya/.config/chromium/Default/Local Storage/https_talkgadget.google.com_0.localstorage
+/home/satya/.config/chromium/Default/Local Storage/chrome-extension_mgijmajocgfcbeboacabfgobmjgjcoja_0.localstorage
+/home/satya/.config/chromium/Default/Local Storage/http_www.youtube.com_0.localstorage-journal
+/home/satya/.config/chromium/Default/Local Storage/https_plus.google.com_0.localstorage
+/home/satya/.config/chromium/Default/Local Storage/https_talkgadget.google.com_0.localstorage-journal
+/home/satya/.config/chromium/Default/Local Storage/chrome-extension_gighmmpiobklfepjocnamgkkbiglidom_0.localstorage
+/home/satya/.config/chromium/Default/Local Storage/http_stackoverflow.com_0.localstorage
+/home/satya/.config/chromium/Default/Local Storage/chrome-extension_mijlebbfndhelmdpmllgcfadlkankhok_0.localstorage
+/home/satya/.config/chromium/Default/Local Storage/http_www.geeksforgeeks.org_0.localstorage
+/home/satya/.config/chromium/Default/Local Storage/http_disqus.com_0.localstorage-journal
+/home/satya/.config/chromium/Default/Local Storage/chrome-extension_pioclpoplcdbaefihamjohnefbikjilc_0.localstorage
+/home/satya/.config/chromium/Default/Local Storage/chrome-extension_mgijmajocgfcbeboacabfgobmjgjcoja_0.localstorage-journal
+/home/satya/.config/chromium/Default/Local Storage/chrome-extension_pioclpoplcdbaefihamjohnefbikjilc_0.localstorage-journal
+/home/satya/.config/chromium/Default/Local Storage/chrome-extension_cfhdojbkjhnklbpkdaibdccddilifddb_0.localstorage
+/home/satya/.config/chromium/Default/Local Storage/http_stackoverflow.com_0.localstorage-journal
+/home/satya/.config/chromium/Default/Local Storage/https_plus.google.com_0.localstorage-journal
+/home/satya/.config/chromium/Default/Local Storage/http_www.youtube.com_0.localstorage
+/home/satya/.config/chromium/Default/Local Storage/chrome-extension_gighmmpiobklfepjocnamgkkbiglidom_0.localstorage-journal
+/home/satya/.config/chromium/Default/Local Storage/chrome-extension_mijlebbfndhelmdpmllgcfadlkankhok_0.localstorage-journal
+/home/satya/.config/chromium/Default/Local Storage/chrome-extension_cfhdojbkjhnklbpkdaibdccddilifddb_0.localstorage-journal
+/home/satya/.config/chromium/Default/Local Storage/http_www.geeksforgeeks.org_0.localstorage-journal
+/home/satya/.config/chromium/Default/Extension Rules/000208.log
+/home/satya/.config/chromium/Default/Extension Rules/MANIFEST-000207
+/home/satya/.config/chromium/Default/Extension Rules/CURRENT
+/home/satya/.config/chromium/Default/Extension Rules/LOG
+/home/satya/.config/chromium/Default/Extension Rules/LOG.old
+/home/satya/.config/chromium/Default/Favicons
+/home/satya/.config/chromium/Safe Browsing Cookies
+/home/satya/.config/chromium/Safe Browsing Csd Whitelist
+/home/satya/.config/dconf/user
+/home/satya/.config/autostart/indicator-multiload.desktop
+/home/satya/.config/nautilus/desktop-metadata
+/home/satya/.config/eog/accels
+/home/satya/.config/google-googletalkplugin/googletalkplugin_ws_port
+/home/satya/.config/google-googletalkplugin/googletalkplugin_port
+/home/satya/.config/google-googletalkplugin/gtbplugin.log
+/home/satya/.thumbnails/normal/8b80af089aa0ab1467c5911136cccccf.png
+/home/satya/.thumbnails/normal/7073796ea4d0b96a7c234fd693446ffc.png
+/home/satya/.thumbnails/normal/ad717f4e6b3ee0a5274d56caeda12f1e.png
+/home/satya/.thumbnails/normal/46cf0ab4b40ebd145dd23c635b55e7e0.png
+/home/satya/.thumbnails/normal/aab27be3fc5a6cdfec5d7193e95192ba.png
+/home/satya/.thumbnails/normal/a785e8a260794cc32bf2fe252fa60b91.png
+/home/satya/.thumbnails/normal/62be7d69d0c30dc6d9118609d1c409eb.png
+/home/satya/.thumbnails/normal/6345257e8a3957e9b4ad8394c1efc0bf.png
+/home/satya/.thumbnails/normal/f9855a23fde8d7f69684ed98cc8d3cec.png
+/home/satya/.thumbnails/normal/a7a0bd83f3bafd5b329a1ba05802561e.png
+/home/satya/.thumbnails/normal/e517f80ab230dc5a1891d19eaf21c8f5.png
+/home/satya/.thumbnails/normal/f73150ed152354edd048b24cfa8d37cc.png
+]0;satya@Satya-PC: ~/asgn/sce/a/2satya@Satya-PC:~/asgn/sce/a/2$ sed -i -e '1,3d' 9.txt
+]0;satya@Satya-PC: ~/asgn/sce/a/2satya@Satya-PC:~/asgn/sce/a/2$ awk '/an/' 10.txt
+This is an apple
+This is an umbrella.
+This is aan egg
+this is nananananana
+banananananana
+]0;satya@Satya-PC: ~/asgn/sce/a/2satya@Satya-PC:~/asgn/sce/a/2$ sed 's/^\/*.*\*\/$//g' 11.txt
+
+/* this is not a */comment
+/* this is not a *comment/
+
+/* this is not a *comment/
+
+
+
+/*THIS IS  COMMENT/*
+
+]0;satya@Satya-PC: ~/asgn/sce/a/2satya@Satya-PC:~/asgn/sce/a/2$  grep -E '^[-]?([0-9]{1,}|[0-9]{1,}\.[0-9]{1,})$' 12.txt
+[01;31m[K1[m[K
+[01;31m[K23[m[K
+[01;31m[K-4[m[K
+[01;31m[K1.0[m[K
+[01;31m[K0.1[m[K
+[01;31m[K1.234234[m[K
+[01;31m[K-1.23453[m[K
+]0;satya@Satya-PC: ~/asgn/sce/a/2satya@Satya-PC:~/asgn/sce/a/2$  ls -lS | awk '{if ($5>1048576 && $1 ~ /^-/) { print $9}};'|awk -F. '{ printf("mv %s %s_big",$0,$1); for(i=2;i<= NF;i++) {printf("%s%s",FS,$i) }{printf("\n")}}'|awk '{system($0)}'
+]0;satya@Satya-PC: ~/asgn/sce/a/2satya@Satya-PC:~/asgn/sce/a/2$ ls
+10.txt  201350508_commands.txt      3.txt  7.txt            [0m[01;31mAssignment2_big_big.tar.gz[0m  SCEAssignment2V3_big_big.pdf
+11.txt  201350508_explaination.txt  4.txt  9.txt            employee.txt                test.txt
+12.txt  201350508.script            5.txt  a_11.txt         practice_big_big.txt        typescript
+1.txt   2.txt                       6.txt  a_9_big_big.txt  practice_big.txt            typescript_big_big
+]0;satya@Satya-PC: ~/asgn/sce/a/2satya@Satya-PC:~/asgn/sce/a/2$ awk 'BEGIN { printf("invenroty report\n") }{ print $1,$2,$3 ,$2*$3  }END{print "Done!"}' employee.txt
+invenroty report
+Name Rate Hours_Worked 0
+A 10 4 40
+B 8 3 24
+C 6 11 66
+D 14 7 98
+E 7 14 98
+F 20 0 0
+   0
+Done!
+]0;satya@Satya-PC: ~/asgn/sce/a/2satya@Satya-PC:~/asgn/sce/a/2$ tar [K[K[K[Kls 201350508*
+201350508_commands.txt  201350508_explaination.txt  201350508.script
+]0;satya@Satya-PC: ~/asgn/sce/a/2satya@Satya-PC:~/asgn/sce/a/2$ mv [K[K[Kmkdir <YourRollNumber>_assignment2[1PYourRollNumber>_assignment2[1PourRollNumber>_assignment2[1PurRollNumber>_assignment2[1PrRollNumber>_assignment2[1PRollNumber>_assignment2[1PollNumber>_assignment2[1PllNumber>_assignment2[C[1PNumber>_assignment2[1PNumber>_assignment2[1Pumber>_assignment2[1Pmber>_assignment2[1Pber>_assignment2[1Per>_assignment2[1Pr>_assignment2[1P>_assignment2[1P_assignment22_assignment20_assignment21_assignment23_assignment25_assignment2[1P_assignment25_assignment20_assignment25_assignment20_assignment28_assignment2
+]0;satya@Satya-PC: ~/asgn/sce/a/2satya@Satya-PC:~/asgn/sce/a/2$ mv 201350508* 201350508[1P[1P[1@c[1@p[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C_assignment2/
+cp: omitting directory `201350508_assignment2'
+]0;satya@Satya-PC: ~/asgn/sce/a/2satya@Satya-PC:~/asgn/sce/a/2$ ls 201350508_Q[Kassignment2/
+201350508_commands.txt  201350508_explaination.txt  201350508.script
+]0;satya@Satya-PC: ~/asgn/sce/a/2satya@Satya-PC:~/asgn/sce/a/2$ tar -c[Kcx[Kvf 201350508_assignment2/[K.tar,gz [K[K[K[K.gz 201350508
+201350508_assignment2/      201350508_commands.txt      201350508_explaination.txt  201350508.script            
+]0;satya@Satya-PC: ~/asgn/sce/a/2satya@Satya-PC:~/asgn/sce/a/2$ tar -cvf 201350508_assignment2.tar.gz 201350508_assignment2/
+201350508_assignment2/
+201350508_assignment2/201350508_explaination.txt
+201350508_assignment2/201350508.script
+201350508_assignment2/201350508_commands.txt
+]0;satya@Satya-PC: ~/asgn/sce/a/2satya@Satya-PC:~/asgn/sce/a/2$ ls
+10.txt  [0m[01;34m201350508_assignment2[0m         201350508.script  5.txt  a_11.txt                    practice_big_big.txt          typescript
+11.txt  [01;31m201350508_assignment2.tar.gz[0m  2.txt             6.txt  a_9_big_big.txt             practice_big.txt              typescript_big_big
+12.txt  201350508_commands.txt        3.txt             7.txt  [01;31mAssignment2_big_big.tar.gz[0m  SCEAssignment2V3_big_big.pdf
+1.txt   201350508_explaination.txt    4.txt             9.txt  employee.txt                test.txt
+]0;satya@Satya-PC: ~/asgn/sce/a/2satya@Satya-PC:~/asgn/sce/a/2$ lstar -cvf 201350508_assignment2.tar.gz 201350508_assignment2/[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[35Pls[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[11@cp 201350508*[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[11Pls[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[35@tar -cvf 201350508_assignment2.tar.gz[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cls[K[Klstar -cvf 201350508_assignment2.tar.gz 201350508_assignment2/[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cls[K[Kman tar
+[?1049h[?1h=TAR(1)                                                  BSD General Commands Manual                                                  TAR(1)[m
+[m
+[1mNAME[0m[m
+     [1mtar[0m — The GNU version of the tar archiving utility[m
+[m
+[1mSYNOPSIS[0m[m
+     [1mtar[0m [[1m-[0m] [1mA[0m [1m--catenate[0m [1m--concatenate[0m [1m|[0m [1mc[0m [1m--create[0m [1m|[0m [1md[0m [1m--diff[0m [1m--compare[0m [1m|[0m [1m--delete[0m [1m|[0m [1mr[0m [1m--append[0m [1m|[0m [1mt[0m [1m--list[0m [1m|[0m [1m--test-label[0m [1m|[0m [1mu[0m [1m--update[0m [1m|[0m[m
+         [1mx[0m [1m--extract[0m [1m--get[0m [[4moptions[24m] [[4mpathname[24m [4m...[24m][m
+[m
+[1mDESCRIPTION[0m[m
+     [1mTar[0m stores and extracts files from a tape or disk archive.[m
+[m
+     The first argument to tar should be a function; either one of the letters [1mAcdrtux[0m, or one of the long function names.  A function let‐[m
+     ter need not be prefixed with ``-'', and may be combined with other single-letter options.  A long function name must be prefixed with[m
+     [1m--[0m.  Some options take a parameter; with the single-letter form these must be given as separate arguments.  With the long form, they[m
+     may be given by appending [1m=[0m[4mvalue[24m to the option.[m
+[m
+[1mFUNCTION[0m [1mLETTERS[0m[m
+     Main operation mode:[m
+[m
+     [1m-A[0m, [1m--catenate[0m, [1m--concatenate[0m[m
+           append tar files to an archive[m
+[m
+     [1m-c[0m, [1m--create[0m[m
+           create a new archive[m
+[m
+     [1m-d[0m, [1m--diff[0m, [1m--compare[0m[m
+           find differences between archive and file system[m
+[m
+     [1m--delete[0m[m
+           delete from the archive (not on mag tapes!)[m
+[m
+     [1m-r[0m, [1m--append[0m[m
+           append files to the end of an archive[m
+[m
+     [1m-t[0m, [1m--list[0m[m
+           list the contents of an archive[m
+[m
+[7m Manual page tar(1) line 1 (press h for help or q to quit)[27m[K[K     [1m--test-label[0m[m
+[7m Manual page tar(1) line 2 (press h for help or q to quit)[27m[K[K           test the archive volume label and exit[m
+[7m Manual page tar(1) line 3 (press h for help or q to quit)[27m[K[K[m
+[7m Manual page tar(1) line 4 (press h for help or q to quit)[27m[K[K     [1m-u[0m, [1m--update[0m[m
+[7m Manual page tar(1) line 5 (press h for help or q to quit)[27m[K[K           only append files newer than copy in archive[m
+[7m Manual page tar(1) line 6 (press h for help or q to quit)[27m[K[K[m
+[7m Manual page tar(1) line 7 (press h for help or q to quit)[27m[K[K     [1m-x[0m, [1m--extract[0m, [1m--get[0m[m
+[7m Manual page tar(1) line 8 (press h for help or q to quit)[27m[K[K           extract files from an archive[m
+[7m Manual page tar(1) line 9 (press h for help or q to quit)[27m[K[K[m
+[7m Manual page tar(1) line 10 (press h for help or q to quit)[27m[K[K[1mOTHER[0m [1mOPTIONS[0m[m
+[7m Manual page tar(1) line 11 (press h for help or q to quit)[27m[K[K     Operation modifiers:[m
+[7m Manual page tar(1) line 12 (press h for help or q to quit)[27m[K[K[m
+[7m Manual page tar(1) line 13 (press h for help or q to quit)[27m[K[K     -[0-7][lmh][m
+[7m Manual page tar(1) line 14 (press h for help or q to quit)[27m[K[K           specify drive and density[m
+[7m Manual page tar(1) line 15 (press h for help or q to quit)[27m[K[K[m
+[7m Manual page tar(1) line 16 (press h for help or q to quit)[27m[K[K     [1m-a[0m, [1m--auto-compress[0m[m
+[7m Manual page tar(1) line 17 (press h for help or q to quit)[27m[K[K           use archive suffix to determine the compression program[m
+[7m Manual page tar(1) line 18 (press h for help or q to quit)[27m[K[K[m
+[7m Manual page tar(1) line 19 (press h for help or q to quit)[27m[K[K     [1m--add-file[0m=[4mFILE[24m[m
+[7m Manual page tar(1) line 20 (press h for help or q to quit)[27m[K[K           add given FILE to the archive (useful if its name starts with a dash)[m
+[7m Manual page tar(1) line 21 (press h for help or q to quit)[27m[K[K[m
+[7m Manual page tar(1) line 22 (press h for help or q to quit)[27m[K[K     [1m--anchored[0m[m
+[7m Manual page tar(1) line 23 (press h for help or q to quit)[27m[K[K           patterns match file name start[m
+[7m Manual page tar(1) line 24 (press h for help or q to quit)[27m[K[K[m
+[7m Manual page tar(1) line 25 (press h for help or q to quit)[27m[K[K     [1m--no-anchored[0m[m
+[7m Manual page tar(1) line 26 (press h for help or q to quit)[27m[K[K           patterns match after any `/' (default for exclusion)[m
+[7m Manual page tar(1) line 27 (press h for help or q to quit)[27m[K[K[m
+[7m Manual page tar(1) line 28 (press h for help or q to quit)[27m[K[K     [1m--atime-preserve[0m[m
+[7m Manual page tar(1) line 29 (press h for help or q to quit)[27m[K[K           preserve access times on dumped files, either by restoring the times[m
+[7m Manual page tar(1) line 30 (press h for help or q to quit)[27m[K[K[m
+[7m Manual page tar(1) line 31 (press h for help or q to quit)[27m[K[K     [1m--no-auto-compress[0m[m
+[7m Manual page tar(1) line 32 (press h for help or q to quit)[27m[K[K           do not use archive suffix to determine the compression program[m
+[7m Manual page tar(1) line 33 (press h for help or q to quit)[27m[K[K[m
+[7m Manual page tar(1) line 34 (press h for help or q to quit)[27m[K[K     [1m-b[0m, [1m--blocking-factor[0m [4mBLOCKS[24m[m
+[7m Manual page tar(1) line 35 (press h for help or q to quit)[27m[K[K           BLOCKS x 512 bytes per record[m
+[7m Manual page tar(1) line 36 (press h for help or q to quit)[27m[K[K[m
+[7m Manual page tar(1) line 37 (press h for help or q to quit)[27m[K[K     [1m-B[0m, [1m--read-full-records[0m[m
+[7m Manual page tar(1) line 38 (press h for help or q to quit)[27m[K[K           reblock as we read (for 4.2BSD pipes)[m
+[7m Manual page tar(1) line 39 (press h for help or q to quit)[27m[K[K[m
+[7m Manual page tar(1) line 40 (press h for help or q to quit)[27m[K[K     [1m--backup[0m[m
+[7m Manual page tar(1) line 41 (press h for help or q to quit)[27m[K[K           backup before removal, choose version CONTROL[m
+[7m Manual page tar(1) line 42 (press h for help or q to quit)[27m[K[K[m
+[7m Manual page tar(1) line 43 (press h for help or q to quit)[27m[K[K     [1m-C[0m, [1m--directory[0m [4mDIR[24m[m
+[7m Manual page tar(1) line 44 (press h for help or q to quit)[27m[K[K           change to directory DIR[m
+[7m Manual page tar(1) line 45 (press h for help or q to quit)[27m[K[K[m
+[7m Manual page tar(1) line 46 (press h for help or q to quit)[27m[K[K     [1m--check-device[0m[m
+[7m Manual page tar(1) line 47 (press h for help or q to quit)[27m[K[K           check device numbers when creating incremental archives (default)[m
+[7m Manual page tar(1) line 48 (press h for help or q to quit)[27m[K[K[m
+[7m Manual page tar(1) line 49 (press h for help or q to quit)[27m[K[K     [1m--no-check-device[0m[m
+[7m Manual page tar(1) line 50 (press h for help or q to quit)[27m[K[K           do not check device numbers when creating incremental archives[m
+[7m Manual page tar(1) line 51 (press h for help or q to quit)[27m[K[K[m
+[7m Manual page tar(1) line 52 (press h for help or q to quit)[27m[K[K     [1m--checkpoint[0m[m
+[7m Manual page tar(1) line 53 (press h for help or q to quit)[27m[K[K           display progress messages every NUMBERth record (default 10)[m
+[7m Manual page tar(1) line 54 (press h for help or q to quit)[27m[K[K[m
+[7m Manual page tar(1) line 55 (press h for help or q to quit)[27m[K[K     [1m--checkpoint-action[0m=[4mACTION[24m[m
+[7m Manual page tar(1) line 56 (press h for help or q to quit)[27m[K[K [KESCESC[Kqq[K[7m Manual page tar(1) line 56 (press h for help or q to quit)[27m[K[K [KESCESC[Kqq[K[7m Manual page tar(1) line 56 (press h for help or q to quit)[27m[K[K[?1l>[?1049l]0;satya@Satya-PC: ~/asgn/sce/a/2satya@Satya-PC:~/asgn/sce/a/2$ q[Knautilus -n .
+]0;satya@Satya-PC: ~/asgn/sce/a/2satya@Satya-PC:~/asgn/sce/a/2$ cp ~/Pix[Kctures/Screenshot\ from\ 2013-09-01\ 14\:01\:10.png 201350508_assignment2
+]0;satya@Satya-PC: ~/asgn/sce/a/2satya@Satya-PC:~/asgn/sce/a/2$ ls 201350508_assignment2
+201350508_commands.txt  201350508_explaination.txt  201350508.script  [0m[01;35mScreenshot from 2013-09-01 14:01:10.png[0m
+]0;satya@Satya-PC: ~/asgn/sce/a/2satya@Satya-PC:~/asgn/sce/a/2$ vim w0[K[K201350508_commands.txt 
+[?1049h[?1h=[1;39r[?12;25h[?12l[?25h[27m[m[H[2J[?25l[39;1HE325: ATTENTION
+Found a swap file by the name ".201350508_commands.txt.swp"
+[10Cowned by: satya   dated: Sun Sep  1 15:19:30 2013
+[9Cfile name: ~satya/asgn/sce/a/2/201350508_commands.txt
+[10Cmodified: no
+[9Cuser name: satya   host name: Satya-PC
+[8Cprocess ID: 7915 (still running)
+While opening file "201350508_commands.txt"
+[13Cdated: Sun Sep  1 15:19:26 2013
+
+(1) Another program may be editing the same file.  If this is the case,
+    be careful not to end up with two different instances of the same
+    file when making changes.  Quit, or continue with caution.
+(2) An edit session for this file crashed.
+    If this is the case, use ":recover" or "vim -r 201350508_commands.txt"
+    to recover the changes (see ":help recovery").
+    If you did this already, delete the swap file ".201350508_commands.txt.swp"
+    to avoid this message.
+
+Swap file ".201350508_commands.txt.swp" already exists!
+[O]pen Read-Only, (E)dit anyway, (R)ecover, (Q)uit, (A)bort:[?12l[?25h[39;1H[K[?25l[39;1H"201350508_commands.txt" 38L, 1087C[>c[1;1H1.  grep -i -E '^[a-z0-9]+@[a-z0-9]+\.(com|org|ac\.in|edu)' 1.txt
+
+2. a  grep -w -E '([0-9]{1,3}.){3}[0-9]{1,3}$' 2.txt
+
+   b  grep -E '([0-9]{1,3})(\.\1){3}' 2.txt
+
+   c  grep -w -E '((([0-9]|[1-9][0-9]|1[0-9][0-9]|2[0-4][0-9]|25[0-5])\.){3}([0-9]|[1-9][0-9]|1[0-9][0-9]|2[0-4][0-9]|25[0-5]))' 2.txt
+
+3. a  grep -E '^(.).*\1$' 3.txt
+
+   b  grep  -E '^.(.).*\1.$' 3.txt
+
+4. a  grep -i -E '^<(..)>.*</\1>$' 4.txt
+
+5. a  grep -E '^('\''|//|#)' 5.txt
+
+   b  grep -E -v '^('\''|//|#)' 5.txt
+
+6.    grep -E '^[A-Z]{2}\s[0-9]{2}\s[A-Z]{2}\s[0-9]{1,4}$' 6.txt
+     [20;7H[K[21;1H7     sed 's_\(.\)\1\+_\1_g' 7.txt[21;36H[K[22;10H[K[23;1H8.    find ~ -cmin -600 -type f[24;10H[K[25;1H9. a  sed -i -e '1,3d' 9.tx[25;29H[K[26;1H[K[27;3H b  awk '/an/' 10.txt[27;25H[K[29;1H   c  sed 's/^\/*.*\*\/$//g' 11.txt [29;37H[K[30;5H[K[31;1H10.a  grep -E '^[-]?([0-9]{1,}|[0-9]{1,}\.[0-9]{1,})$' 12.txt[31;62H[K[32;1H[K[33;1H11.   ls -lS | awk '{if ($5>1048576 && $1 ~ /^-/) { print $9}};'|awk -F. '{ printf("mv %s %s_big",$0,$1); for(i=2;i<=NF;i++) {printf("%s%s",FS,,[34;1H$i) }{printf("\n")}}'|awk '{system($0)}'[34;41H[K[35;5H[K[36;5H[K[38;1H12.   awk 'BEGIN { printf("invenroty report\n") }{ print $1,$2,$3 ,$2*$3  }END{print "Done!"}' employee.txt[39;126H1,1[11CTop[1;1H[?12l[?25hP+q436f\P+q6b75\P+q6b64\P+q6b72\P+q6b6c\P+q2332\P+q2334\P+q2569\P+q2a37\P+q6b31\[?25l[39;126H2,0-1[2;1H[?12l[?25h[?25l[39;126H3,1  [3;1H[?12l[?25h[?25l[39;126H4,0-1[4;1H[?12l[?25h[?25l[39;126H5,1  [5;1H[?12l[?25h[?25l[39;126H6,0-1[6;1H[?12l[?25h[?25l[39;126H7,1  [7;1H[?12l[?25h[?25l[39;126H8,0-1[8;1H[?12l[?25h[?25l[39;126H9,1  [9;1H[?12l[?25h[?25l[39;126H10,0-1[10;1H[?12l[?25h[?25l[39;127H1,1  [11;1H[?12l[?25h[?25l[39;127H2,0-1[12;1H[?12l[?25h[?25l[39;127H3,1  [13;1H[?12l[?25h[?25l[39;127H4,0-1[14;1H[?12l[?25h[?25l[39;127H5,1  [15;1H[?12l[?25h[?25l[39;127H6,0-1[16;1H[?12l[?25h[?25l[39;127H7,1  [17;1H[?12l[?25h[?25l[39;127H8,0-1[18;1H[?12l[?25h[?25l[39;127H9,1  [19;1H[?12l[?25h[?25l[39;126H20[20;1H[?12l[?25h[?25l[39;127H1[21;1H[?12l[?25h[?25l[39;127H2,0-1[22;1H[?12l[?25h[?25l[39;127H3,1  [23;1H[?12l[?25h[?25l[39;127H4,0-1[24;1H[?12l[?25h[?25l[39;127H5,1  [25;1H[?12l[?25h[?25l[39;127H6,0-1[26;1H[?12l[?25h[?25l[39;127H7,1  [27;1H[?12l[?25h[?25l[39;127H8[28;1H[?12l[?25h[?25l[39;127H9[29;1H[?12l[?25h[?25l[39;126H30,0-1[30;1H[?12l[?25h[?25l[39;127H1,1  [31;1H[?12l[?25h[?25l[39;127H2,0-1[32;1H[?12l[?25h[?25l[39;127H3,1  [33;1H[?12l[?25h[?25l[39;127H4,0-1[35;1H[?12l[?25h[?25l[39;127H3,1  [33;1H[?12l[?25h[?25l[39;127H2,0-1[32;1H[?12l[?25h[?25l[39;127H3,1  [33;1H[?12l[?25h[?25l[39;1H3 fewer lines[39;14H[K[33;1H[K[34;1H12.   awk 'BEGIN { printf("invenroty report\n") }{ print $1,$2,$3 ,$2*$3  }END{print "Done!"}' employee.txt
+
+[1m[34m~                                                                                                                                              [37;1H~                                                                                                                                              [38;1H~                                                                                                                                              [m[39;126H33,0-1[8CAll[39;126H[K[39;126H33,0-1[8CAll[33;1H[?12l[?25h[?25l[?12l[?25h[?25l[33;38r[38;1H
+[1;39r[38;1H[1m[34m~                                                                                                                                              [m[39;1H[K[39;126H33,1[10CAll[33;1H[?12l[?25h[?25l[33;38r[38;1H
+[1;39r[38;1H[1m[34m~                                                                                                                                              [m[39;126H[K[39;126H33,0-1[8CAll[33;1H[?12l[?25h[?25l[39;127H2[32;1H[?12l[?25h[?25l[39;127H1,1  [31;1H[?12l[?25h[?25l[39;127H0,0-1[30;1H[?12l[?25h[?25l[39;126H29,1  [29;1H[?12l[?25h[?25l[39;127H8[28;1H[?12l[?25h[?25l[39;127H7[27;1H[?12l[?25h[?25l[39;127H6,0-1[26;1H[?12l[?25h[?25l[39;127H5,1  [25;1H[?12l[?25h[?25l[39;127H4,0-1[24;1H[?12l[?25h[?25l[39;127H3,1  [23;1H[?12l[?25h[?25l[39;127H2,0-1[22;1H[?12l[?25h[?25l[39;127H1,1  [21;1H[?12l[?25h[?25l[39;127H0[20;1H[?12l[?25h[?25l[39;126H19[19;1H[?12l[?25h[?25l[39;127H8,0-1[18;1H[?12l[?25h[?25l[39;127H9,1  [19;1H[?12l[?25h[?25l[39;126H20[20;1H[?12l[?25h[?25l[39;127H1[21;1H[?12l[?25h[?25l[39;129H2[21;2H[?12l[?25h[?25l[39;129H3[21;3H[?12l[?25h[?25l[39;129H4[21;4H[?12l[?25h[?25l[39;129H5[21;5H[?12l[?25h[?25l[39;129H6[21;6H[?12l[?25h[?25l[39;129H7[21;7H[?12l[?25h[?25l[39;129H8[21;8H[?12l[?25h[?25l[39;129H9[21;9H[?12l[?25h[?25l[39;129H10[21;10H[?12l[?25h[?25l[39;130H1[21;11H[?12l[?25h[?25l[39;130H2[21;12H[?12l[?25h[?25l[39;130H3[21;13H[?12l[?25h[?25ls\(.\)\1\+_\1_g' 7.txt[21;34H[K[21;13H[?12l[?25h[?25l[39;126H[K[39;1H/[?12l[?25h [?25l[124C21,13[9CAll[21;13H[?12l[?25h[?25l[39;1H[1m-- INSERT --[m[39;126H[K[39;126H21,13[9CAll[21;13H[?12l[?25h[?25ls/\(.\)\1\+_\1_g' 7.txt[39;130H4[21;14H[?12l[?25h[?25l\[46m([m.\[46m)[m[39;130H5[21;15H[?12l[?25h[?25l[39;130H6[21;16H[?12l[?25h[?25l(.\)[39;130H7[21;17H[?12l[?25h[?25l[46m([m.\[46m)[m[39;130H8[21;18H[?12l[?25h[?25l[39;130H9[21;19H[?12l[?25h[?25l(.\)[39;129H20[21;20H[?12l[?25h[?25l[39;130H1[21;21H[?12l[?25h[?25l[39;130H2[21;22H[?12l[?25h[?25l[39;130H3[21;23H[?12l[?25h[?25l+\1_g' 7.txt[21;34H[K[21;23H[?12l[?25h[?25l+/\1_g' 7.txt[39;130H4[21;24H[?12l[?25h[?25l[39;130H5[21;25H[?12l[?25h[?25l[39;130H6[21;26H[?12l[?25h[?25l1g' 7.txt[21;34H[K[21;26H[?12l[?25h[?25l1/g' 7.txt[39;130H7[21;27H[?12l[?25h[?25l[39;127H2,1 [22;1H[?12l[?25h[?25l[39;127H3,27[23;27H[?12l[?25h[?25l[39;127H4,1 [24;1H[?12l[?25h[?25l[39;127H5,27[25;27H[?12l[?25h[?25l[39;127H6,1 [26;1H[?12l[?25h[?25l[39;127H7,24[27;24H[?12l[?25h[?25l[39;127H8,7 [28;7H[?12l[?25h[?25l[39;127H9,27[29;27H[?12l[?25h[?25l[39;127H8,7 [28;7H[?12l[?25h[?25l[39;127H7,24[27;24H[?12l[?25h[?25l[39;127H6,1 [26;1H[?12l[?25h[?25l[39;127H5,27[25;27H[?12l[?25h[?25l[39;127H4,1 [24;1H[?12l[?25h[?25l[39;127H3,27[23;27H[?12l[?25h[?25l[39;130H6[23;26H[?12l[?25h[?25l[39;130H5[23;25H[?12l[?25h[?25l[39;130H4[23;24H[?12l[?25h[?25l[39;130H3[23;23H[?12l[?25h[?25l[39;130H2[23;22H[?12l[?25h[?25l[39;130H1[23;21H[?12l[?25h[?25l[39;130H0[23;20H[?12l[?25h[?25l[39;129H19[23;19H[?12l[?25h[?25l[39;130H8[23;18H[?12l[?25h[?25l[39;130H7[23;17H[?12l[?25h[?25l[39;130H6[23;16H[?12l[?25h[?25l[39;130H5[23;15H[?12l[?25h[?25l-min -600 -type f[23;31H[K[23;15H[?12l[?25h[?25lmmin -600 -type f[39;130H6[23;16H[?12l[?25h[?25l[39;127H4,1 [24;1H[?12l[?25h[?25l[39;127H5,16[25;16H[?12l[?25h[?25l[39;127H6,1 [26;1H[?12l[?25h[?25l[39;127H7,16[27;16H[?12l[?25h[?25l[39;127H8,7 [28;7H[?12l[?25h[?25l[39;127H9,16[29;16H[?12l[?25h[?25l[39;126H30,1 [30;1H[?12l[?25h[?25l[39;127H1,16[31;16H[?12l[?25h[?25l[39;127H2,1 [32;1H[?12l[?25h[?25l[39;127H3[33;1H[?12l[?25h[?25l[39;127H2[32;1H[?12l[?25h[?25l[39;127H1,16[31;16H[?12l[?25h[?25l[39;127H0,1 [30;1H[?12l[?25h[?25l[39;126H29,16[29;16H[?12l[?25h[?25l[39;127H8,7 [28;7H[?12l[?25h[?25l[39;127H7,16[27;16H[?12l[?25h[?25l[39;127H6,1 [26;1H[?12l[?25h[?25l[39;127H5,16[25;16H[?12l[?25h[?25l[39;127H4,1 [24;1H[?12l[?25h[?25l[39;127H3,16[23;16H[?12l[?25h[?25l[39;127H2,1 [22;1H[?12l[?25h[?25l[21;15H[46m([m.\[46m)[m[39;127H1,16[21;16H[?12l[?25h[?25l(.\)[39;127H0,7 [20;7H[?12l[?25h[?25l[39;126H19,16[19;16H[?12l[?25h[?25l[39;127H8,1 [18;1H[?12l[?25h[?25l[39;127H7,16[17;16H[?12l[?25h[?25l[39;127H6,1 [16;1H[?12l[?25h[?25l[39;127H5,16[15;16H[?12l[?25h[?25l[39;127H4,1 [14;1H[?12l[?25h[?25l[39;127H3,16[13;16H[?12l[?25h[?25l[39;127H2,1 [12;1H[?12l[?25h[?25l[39;127H1,16[11;16H[?12l[?25h[?25l[39;127H0,1 [10;1H[?12l[?25h[?25l[39;126H9,16[9;16H[?12l[?25h[?25l[39;126H8,1 [8;1H[?12l[?25h[?25l[39;126H7,16[7;16H[?12l[?25h[?25l[39;126H6,1 [6;1H[?12l[?25h[?25l[5;16H[46m([10C)[m[39;126H5,16[5;16H[?12l[?25h[?25l([10C)[39;126H4,1 [4;1H[?12l[?25h[?25l[39;126H3,16[3;16H[?12l[?25h[?25l[39;126H2,1 [2;1H[?12l[?25h[?25l[39;126H1,16[1;16H[?12l[?25h[?25l[39;126H2,1 [2;1H[?12l[?25h[?25l[39;126H3,16[3;16H[?12l[?25h[?25l[39;126H4,1 [4;1H[?12l[?25h[?25l[5;16H[46m([10C)[m[39;126H5,16[5;16H[?12l[?25h[?25l([10C)[39;126H6,1 [6;1H[?12l[?25h[?25l[39;126H7,16[7;16H[?12l[?25h[?25l[39;126H8,1 [8;1H[?12l[?25h[?25l[39;126H9,16[9;16H[?12l[?25h[?25l[39;126H10,1[10;1H[?12l[?25h[?25l[39;127H1,16[11;16H[?12l[?25h[?25l[39;127H2,1 [12;1H[?12l[?25h[?25l[39;127H3,16[13;16H[?12l[?25h[?25l[39;127H4,1 [14;1H[?12l[?25h[?25l[39;127H5,16[15;16H[?12l[?25h[?25l[39;127H6,1 [16;1H[?12l[?25h[?25l[39;127H7,16[17;16H[?12l[?25h[?25l[39;127H8,1 [18;1H[?12l[?25h[?25l[39;127H9,16[19;16H[?12l[?25h[?25l[39;126H20,7 [20;7H[?12l[?25h[?25l[21;15H[46m([m.\[46m)[m[39;127H1,16[21;16H[?12l[?25h[?25l(.\)[39;127H2,1 [22;1H[?12l[?25h[?25l[39;127H3,16[23;16H[?12l[?25h[?25l[39;127H4,1 [24;1H[?12l[?25h[?25l[39;127H5,16[25;16H[?12l[?25h[?25l[39;127H6,1 [26;1H[?12l[?25h[?25l[39;127H7,16[27;16H[?12l[?25h[?25l[39;127H8,7 [28;7H[?12l[?25h[?25l[39;127H9,16[29;16H[?12l[?25h[?25l[39;126H30,1 [30;1H[?12l[?25h[?25l[39;127H1,16[31;16H[?12l[?25h[?25l[39;127H2,1 [32;1H[?12l[?25h[?25l[39;127H3[33;1H[?12l[?25h[?25l[39;127H2[32;1H[?12l[?25h[?25l[39;127H1,16[31;16H[?12l[?25h[?25l[39;127H0,1 [30;1H[?12l[?25h[?25l[39;126H29,16[29;16H[?12l[?25h[?25l[39;127H8,7 [28;7H[?12l[?25h[?25l[39;127H7,16[27;16H[?12l[?25h[?25l[39;127H6,1 [26;1H[?12l[?25h[?25l[39;127H5,16[25;16H[?12l[?25h[?25l[39;127H4,1 [24;1H[?12l[?25h[?25l[39;127H3,16[23;16H[?12l[?25h[?25l[39;127H2,1 [22;1H[?12l[?25h[?25l[21;15H[46m([m.\[46m)[m[39;127H1,16[21;16H[?12l[?25h[?25l(.\)[39;127H0,7 [20;7H[?12l[?25h[?25l[39;126H19,16[19;16H[?12l[?25h[?25l[39;127H8,1 [18;1H[?12l[?25h[?25l[39;127H7,16[17;16H[?12l[?25h[?25l[39;127H6,1 [16;1H[?12l[?25h[?25l[39;127H5,16[15;16H[?12l[?25h[?25l[39;127H4,1 [14;1H[?12l[?25h[?25l[39;127H3,16[13;16H[?12l[?25h[?25l[39;127H2,1 [12;1H[?12l[?25h[?25l[39;127H1,16[11;16H[?12l[?25h[?25l[39;127H0,1 [10;1H[?12l[?25h[?25l[39;126H9,16[9;16H[?12l[?25h[?25l[39;126H8,1 [8;1H[?12l[?25h[?25l[39;126H7,16[7;16H[?12l[?25h[?25l[39;126H6,1 [6;1H[?12l[?25h[?25l[5;16H[46m([10C)[m[39;126H5,16[5;16H[?12l[?25h[?25l([10C)[39;126H4,1 [4;1H[?12l[?25h[?25l[5;16H[46m([10C)[m[39;126H5,16[5;16H[?12l[?25h[?25l([10C)[39;126H6,1 [6;1H[?12l[?25h[?25l[39;126H7,16[7;16H[?12l[?25h[?25l[39;126H8,1 [8;1H[?12l[?25h[?25l[39;126H9,16[9;16H[?12l[?25h[?25l[39;126H10,1[10;1H[?12l[?25h[?25l[39;127H1,16[11;16H[?12l[?25h[?25l[39;127H2,1 [12;1H[?12l[?25h[?25l[39;127H3,16[13;16H[?12l[?25h[?25l[39;127H4,1 [14;1H[?12l[?25h[?25l[39;127H5,16[15;16H[?12l[?25h[?25l[39;127H6,1 [16;1H[?12l[?25h[?25l[39;127H7,16[17;16H[?12l[?25h[?25l[39;127H8,1 [18;1H[?12l[?25h[?25l[39;127H9,16[19;16H[?12l[?25h[?25l[39;126H20,7 [20;7H[?12l[?25h[?25l[21;15H[46m([m.\[46m)[m[39;127H1,16[21;16H[?12l[?25h[?25l(.\)[39;127H2,1 [22;1H[?12l[?25h[?25l[39;127H3,16[23;16H[?12l[?25h[?25l[39;127H4,1 [24;1H[?12l[?25h[?25l[39;127H5,16[25;16H[?12l[?25h[?25l[39;127H6,1 [26;1H[?12l[?25h[?25l[39;127H7,16[27;16H[?12l[?25h[?25l[39;127H8,7 [28;7H[?12l[?25h[?25l[39;127H9,16[29;16H[?12l[?25h[?25l[39;126H30,1 [30;1H[?12l[?25h[?25l[39;127H1,16[31;16H[?12l[?25h[?25l[39;127H2,1 [32;1H[?12l[?25h[?25l[39;127H3[33;1H[?12l[?25h[?25l[39;127H2[32;1H[?12l[?25h[?25l[39;127H1,16[31;16H[?12l[?25h[?25l[39;127H0,1 [30;1H[?12l[?25h[?25l[39;126H29,16[29;16H[?12l[?25h[?25l[39;127H8,7 [28;7H[?12l[?25h[?25l[39;127H7,16[27;16H[?12l[?25h[?25l[39;127H6,1 [26;1H[?12l[?25h[?25l[39;127H5,16[25;16H[?12l[?25h[?25l[39;127H4,1 [24;1H[?12l[?25h[?25l[39;127H3,16[23;16H[?12l[?25h[?25l[39;127H2,1 [22;1H[?12l[?25h[?25l[21;15H[46m([m.\[46m)[m[39;127H1,16[21;16H[?12l[?25h[?25l(.\)[39;127H0,7 [20;7H[?12l[?25h[?25l[39;126H19,16[19;16H[?12l[?25h[?25l[39;127H8,1 [18;1H[?12l[?25h[?25l[39;127H7,16[17;16H[?12l[?25h[?25l[39;127H6,1 [16;1H[?12l[?25h[?25l[39;127H5,16[15;16H[?12l[?25h[?25l[39;127H4,1 [14;1H[?12l[?25h[?25l[39;127H3,16[13;16H[?12l[?25h[?25l[39;127H2,1 [12;1H[?12l[?25h[?25l[39;127H1,16[11;16H[?12l[?25h[?25l[39;127H0,1 [10;1H[?12l[?25h[?25l[39;126H9,16[9;16H[?12l[?25h[?25l[39;126H8,1 [8;1H[?12l[?25h[?25l[39;126H7,16[7;16H[?12l[?25h[?25l[39;126H6,1 [6;1H[?12l[?25h[?25l[5;16H[46m([10C)[m[39;126H5,16[5;16H[?12l[?25h[?25l([10C)[39;126H6,1 [6;1H[?12l[?25h[?25l[39;126H7,16[7;16H[?12l[?25h[?25l[39;126H8,1 [8;1H[?12l[?25h[?25l[39;126H9,16[9;16H[?12l[?25h[?25l[39;126H10,1[10;1H[?12l[?25h[?25l[39;127H1,16[11;16H[?12l[?25h[?25l[39;127H2,1 [12;1H[?12l[?25h[?25l[39;127H3,16[13;16H[?12l[?25h[?25l[39;127H4,1 [14;1H[?12l[?25h[?25l[39;127H5,16[15;16H[?12l[?25h[?25l[39;127H6,1 [16;1H[?12l[?25h[?25l[39;127H7,16[17;16H[?12l[?25h[?25l[39;127H8,1 [18;1H[?12l[?25h[?25l[39;127H9,16[19;16H[?12l[?25h[?25l[39;126H20,7 [20;7H[?12l[?25h[?25l[21;15H[46m([m.\[46m)[m[39;127H1,16[21;16H[?12l[?25h[?25l(.\)[39;127H2,1 [22;1H[?12l[?25h[?25l[39;127H3,16[23;16H[?12l[?25h[?25l[39;127H4,1 [24;1H[?12l[?25h[?25l[39;127H5,16[25;16H[?12l[?25h[?25l[39;127H6,1 [26;1H[?12l[?25h[?25l[39;127H7,16[27;16H[?12l[?25h[?25l[39;127H8,7 [28;7H[?12l[?25h[?25l[39;127H9,16[29;16H[?12l[?25h[?25l[39;126H30,1 [30;1H[?12l[?25h[?25l[39;127H1,16[31;16H[?12l[?25h[?25l[39;127H2,1 [32;1H[?12l[?25h[?25l[39;127H3[33;1H[?12l[?25h[?25l[39;127H2[32;1H[?12l[?25h[?25l[39;127H1,16[31;16H[?12l[?25h[?25l[39;127H0,1 [30;1H[?12l[?25h[?25l[39;126H29,16[29;16H[?12l[?25h[?25l[39;127H8,7 [28;7H[?12l[?25h[?25l[39;127H7,16[27;16H[?12l[?25h[?25l[39;127H6,1 [26;1H[?12l[?25h[?25l[39;127H5,16[25;16H[?12l[?25h[?25l[39;127H4,1 [24;1H[?12l[?25h[?25l[39;127H3,16[23;16H[?12l[?25h[?25l[39;127H2,1 [22;1H[?12l[?25h[?25l[21;15H[46m([m.\[46m)[m[39;127H1,16[21;16H[?12l[?25h[?25l(.\)[39;127H0,7 [20;7H[?12l[?25h[?25l[39;126H19,16[19;16H[?12l[?25h[?25l[39;127H8,1 [18;1H[?12l[?25h[?25l[39;127H7,16[17;16H[?12l[?25h[?25l[39;127H6,1 [16;1H[?12l[?25h[?25l[39;127H5,16[15;16H[?12l[?25h[?25l[39;127H4,1 [14;1H[?12l[?25h[?25l[39;127H3,16[13;16H[?12l[?25h[?25l[39;127H2,1 [12;1H[?12l[?25h[?25l[39;127H1,16[11;16H[?12l[?25h[?25l[39;127H0,1 [10;1H[?12l[?25h[?25l[39;127H1,16[11;16H[?12l[?25h[?25l[39;127H2,1 [12;1H[?12l[?25h[?25l[39;127H3,16[13;16H[?12l[?25h[?25l[39;127H4,1 [14;1H[?12l[?25h[?25l[39;127H5,16[15;16H[?12l[?25h[?25l[39;127H6,1 [16;1H[?12l[?25h[?25l[39;127H7,16[17;16H[?12l[?25h[?25l[39;127H8,1 [18;1H[?12l[?25h[?25l[39;12

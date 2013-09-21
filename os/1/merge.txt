@@ -1,0 +1,2 @@
+123445454654	1.free memory
+	2.use long insted int if necessary

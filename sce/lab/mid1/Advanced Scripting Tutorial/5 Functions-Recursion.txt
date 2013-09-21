@@ -1,0 +1,48 @@
+#!/bin/bash
+# recursion-def.sh
+# A script that defines "recursion" in a rather graphic way.
+
+RECURSIONS=10
+r_count=0
+sp=" "
+
+define_recursion ()
+{
+  ((r_count++))
+  sp="$sp"" "
+  echo -n "$sp"
+  echo "\"The act of recurring ... \""   # Per 1913 Webster's dictionary.
+
+  while [ $r_count -le $RECURSIONS ]
+  do
+    define_recursion
+  done
+}
+
+echo
+echo "Recursion: "
+define_recursion
+echo
+
+exit $?
+
+=============================================================
+
+Recursion with local vars
+
+fact ()
+{
+  local number=$1
+  #  Variable "number" must be declared as local,
+  #+ otherwise this doesn't work.
+  if [ "$number" -eq 0 ]
+  then
+    factorial=1    # Factorial of 0 = 1.
+  else
+    let "decrnum = number - 1"
+    fact $decrnum  # Recursive function call (the function calls itself).
+    let "factorial = $number * $?"
+  fi
+
+  return $factorial
+}

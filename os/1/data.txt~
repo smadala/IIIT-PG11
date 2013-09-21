@@ -1,0 +1,10 @@
+ prog1 : main.o reversefile.o 
+        CC -o app main.o reversefile.o
+
+     file1.o : main.c reversefile.h
+             gcc -c main.c
+
+     file2.o : file2.cc mydefs.h
+             CC -c file2.cc
+      clean :
+             rm file1.o file2.o file3.o

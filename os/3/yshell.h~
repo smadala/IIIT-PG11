@@ -1,0 +1,19 @@
+#ifndef YSHELL_H
+#define YSHELL_H
+#include<vector>
+#include<string>
+using namespace::std;
+extern vector<string> history;
+vector<char**> parseCommand(string cmd);// parses include pipe
+void parsecmd(string cmd, char** argv);// removes spaces and tabs from command argv
+int loadHistory(vector<string> history);
+void dumpHistory(vector<string> history,int numHistory);
+int inBuiltCmd(char *cmd);
+void handleBuiltIn(char **argv,int inBuilt);
+void processCmd(string input);
+void importRC();
+void cd(char **a);
+void echo(char **a);
+void exp(char **a);
+void execHistory(vector<string> history, int num);
+#endif

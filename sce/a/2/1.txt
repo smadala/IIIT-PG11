@@ -1,0 +1,17 @@
+cse@iiit.ac.in
+
+bioinfo@.iiit.ac.in                 (invalid: @ should not be followed by .)
+
+xyz@gmail.com
+
+XYZ@GMAIL.COM
+
+*xyz@gmail.com                      (invalid: shoud not start with special symbols)
+
+x*yz@gmail.com
+
+a@bc_d@facebook.com                 (invalid: only one @ symbol allowed)
+
+gr8@stanford.edu
+
+blessing4all@charity..org           (invalid: no two consecutive dots in the domain part)

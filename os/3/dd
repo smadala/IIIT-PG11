@@ -1,0 +1,78 @@
+total 23776
+-rwxrwxr-x 1 satya satya   242435 Sep 14 19:15 app
+-rw-rw-r-- 1 satya satya    52435 Sep 14 11:24 Assignment 3 - Shell1.pdf
+-rw-rw-r-- 1 satya satya    52435 Sep  8 15:04 Assignment 3 - Shell.pdf
+-rw-rw-r-- 1 satya satya     3538 Sep 14 19:03 cd.cpp
+-rw-rw-r-- 1 satya satya     4031 Sep 14 16:57 cd.cpp~
+-rw-rw-r-- 1 satya satya   170088 Sep 14 19:03 cd.o
+-rw-r----- 1 satya satya 14143488 Sep 11 12:25 core
+-rw-rw-r-- 1 satya satya        0 Sep 14 20:40 dd
+-rw-rw-r-- 1 satya satya      402 Sep  8 16:39 exec.cpp
+-rw-rw-r-- 1 satya satya      226 Sep 14 11:58 Makefile
+-rw-rw-r-- 1 satya satya     3005 Sep 14 16:08 parse.cpp
+-rw-rw-r-- 1 satya satya     1818 Sep 10 22:27 parse.cpp~
+-rw-rw-r-- 1 satya satya   206008 Sep 14 19:01 parse.o
+-rw-rw-r-- 1 satya satya      847 Sep 10 20:39 p.c
+-rw-rw-r-- 1 satya satya        6 Sep 13 10:09 sam.txt
+-rw-rw-r-- 1 satya satya      116 Sep 13 19:10 test.cpp
+-rw-rw-r-- 1 satya satya       72 Sep 13 21:36 todo.txt
+drwxrwxr-x 2 satya satya     4096 Sep 11 00:19 v1
+drwxrwxr-x 2 satya satya     4096 Sep 11 00:19 v2
+-rw-rw-r-- 1 satya satya     2719 Sep 14 19:15 yshell.cpp
+-rw-rw-r-- 1 satya satya     2034 Sep 14 16:57 yshell.cpp~
+-rw-rw-r-- 1 satya satya      551 Sep 14 19:01 yshell.h
+-rw-rw-r-- 1 satya satya      604 Sep 14 17:02 yshell.h~
+-rw-rw-r-- 1 satya satya  9120720 Sep 14 19:03 yshell.h.gch
+-rw-rw-r-- 1 satya satya   273000 Sep 14 19:15 yshell.o
+total 23780
+-rwxrwxr-x 1 satya satya   242435 Sep 14 19:15 app
+-rw-rw-r-- 1 satya satya    52435 Sep 14 11:24 Assignment 3 - Shell1.pdf
+-rw-rw-r-- 1 satya satya    52435 Sep  8 15:04 Assignment 3 - Shell.pdf
+-rw-rw-r-- 1 satya satya     3538 Sep 14 19:03 cd.cpp
+-rw-rw-r-- 1 satya satya     4031 Sep 14 16:57 cd.cpp~
+-rw-rw-r-- 1 satya satya   170088 Sep 14 19:03 cd.o
+-rw-r----- 1 satya satya 14143488 Sep 11 12:25 core
+-rw-rw-r-- 1 satya satya     1417 Sep 14 20:40 dd
+-rw-rw-r-- 1 satya satya      402 Sep  8 16:39 exec.cpp
+-rw-rw-r-- 1 satya satya      226 Sep 14 11:58 Makefile
+-rw-rw-r-- 1 satya satya     3005 Sep 14 16:08 parse.cpp
+-rw-rw-r-- 1 satya satya     1818 Sep 10 22:27 parse.cpp~
+-rw-rw-r-- 1 satya satya   206008 Sep 14 19:01 parse.o
+-rw-rw-r-- 1 satya satya      847 Sep 10 20:39 p.c
+-rw-rw-r-- 1 satya satya        6 Sep 13 10:09 sam.txt
+-rw-rw-r-- 1 satya satya      116 Sep 13 19:10 test.cpp
+-rw-rw-r-- 1 satya satya       72 Sep 13 21:36 todo.txt
+drwxrwxr-x 2 satya satya     4096 Sep 11 00:19 v1
+drwxrwxr-x 2 satya satya     4096 Sep 11 00:19 v2
+-rw-rw-r-- 1 satya satya     2719 Sep 14 19:15 yshell.cpp
+-rw-rw-r-- 1 satya satya     2034 Sep 14 16:57 yshell.cpp~
+-rw-rw-r-- 1 satya satya      551 Sep 14 19:01 yshell.h
+-rw-rw-r-- 1 satya satya      604 Sep 14 17:02 yshell.h~
+-rw-rw-r-- 1 satya satya  9120720 Sep 14 19:03 yshell.h.gch
+-rw-rw-r-- 1 satya satya   273000 Sep 14 19:15 yshell.o
+total 23780
+-rwxrwxr-x 1 satya satya   242435 Sep 14 19:15 app
+-rw-rw-r-- 1 satya satya    52435 Sep 14 11:24 Assignment 3 - Shell1.pdf
+-rw-rw-r-- 1 satya satya    52435 Sep  8 15:04 Assignment 3 - Shell.pdf
+-rw-rw-r-- 1 satya satya     3538 Sep 14 19:03 cd.cpp
+-rw-rw-r-- 1 satya satya     4031 Sep 14 16:57 cd.cpp~
+-rw-rw-r-- 1 satya satya   170088 Sep 14 19:03 cd.o
+-rw-r----- 1 satya satya 14143488 Sep 11 12:25 core
+-rw-rw-r-- 1 satya satya     2834 Sep 14 20:40 dd
+-rw-rw-r-- 1 satya satya      402 Sep  8 16:39 exec.cpp
+-rw-rw-r-- 1 satya satya      226 Sep 14 11:58 Makefile
+-rw-rw-r-- 1 satya satya     3005 Sep 14 16:08 parse.cpp
+-rw-rw-r-- 1 satya satya     1818 Sep 10 22:27 parse.cpp~
+-rw-rw-r-- 1 satya satya   206008 Sep 14 19:01 parse.o
+-rw-rw-r-- 1 satya satya      847 Sep 10 20:39 p.c
+-rw-rw-r-- 1 satya satya        6 Sep 13 10:09 sam.txt
+-rw-rw-r-- 1 satya satya      116 Sep 13 19:10 test.cpp
+-rw-rw-r-- 1 satya satya       72 Sep 13 21:36 todo.txt
+drwxrwxr-x 2 satya satya     4096 Sep 11 00:19 v1
+drwxrwxr-x 2 satya satya     4096 Sep 11 00:19 v2
+-rw-rw-r-- 1 satya satya     2719 Sep 14 19:15 yshell.cpp
+-rw-rw-r-- 1 satya satya     2034 Sep 14 16:57 yshell.cpp~
+-rw-rw-r-- 1 satya satya      551 Sep 14 19:01 yshell.h
+-rw-rw-r-- 1 satya satya      604 Sep 14 17:02 yshell.h~
+-rw-rw-r-- 1 satya satya  9120720 Sep 14 19:03 yshell.h.gch
+-rw-rw-r-- 1 satya satya   273000 Sep 14 19:15 yshell.o

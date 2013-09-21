@@ -1,0 +1,8 @@
+Name         Rate          Hours_Worked
+A            10                4
+B            8                 3                  
+C            6                 11
+D            14                7
+E            7                 14
+F            20                0                   
+

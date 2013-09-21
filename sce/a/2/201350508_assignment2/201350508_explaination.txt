@@ -1,0 +1,64 @@
+1. -i for case insensitive -E for extension grep(to reduce use of escape character)
+     email start with atleast one alphanum followed by one '@' followed by atleast one alphanum
+     followed by one '.' and finally followed by either com,org,ac.in,edu.
+     ^ for start of line
+     + atleast one specified pattern
+     \. escaping the '.'
+     |  for specifying alter(or)
+
+2.a  repeate three digits and a dot three times followed by a three digits number
+    
+  b  take back reference of first one to three digit number repeate same number three times with before dot every time
+
+  c  for ip address each number should be less than 255 for that check 0 to 9 or 10 to 99 or 100 to 199 or 200 to 249 or 250 to 255
+    first three numbers should followed by dot
+
+3.a  back reference first character of line use as character as last character of line in middle any number of any character
+
+  b  skip the first character back reference the second character use same character as last second character of line
+
+4.  two character in middle of anchor tag in start of line should be same as two character in middle of </ and > at end of line
+
+5.a  start of line should be ', // or #
+      to specify ' in pattern we should use '\''
+
+  b  to inverse the pattern use -v option
+
+
+6.   \s used for space
+      [0-9]{1,4} indicate single digits to four digit number
+
+
+7.    back reference every character if it is followed by it self more than once the replace all occurence with same character once
+
+8.   -ytpe f for only files
+      -cmin -600 shows files changes last 600 mins
+
+
+9. a  -i is to write output to same file
+      1,3d specifies delete 1 to 3 lines
+      -e execute the command
+
+   b   should give regular expression in // for awk
+
+   c  s is for substitute
+      / is delimeter 
+      ^ represents start of line
+      ^\/* represents start of line is /*
+       .* indicates any number of characters
+      *\/$ specifies end is *\
+      // indicates here replace with empty string
+      g is for applay to all occurence
+
+10.   grep -E '^[-]?([0-9]{1,}|[0-9]{1,}\.[0-9]{1,})$' 12.txt
+      number can start with -(minus)
+      integer atleast one digits followed by any number of digits
+      floating point start with any digits and followed by a dot and anu number of digits
+
+11.1) display list of file in current directory order by size
+   2) check size size is more than 1MB and regular file then print file names
+   3) use .(dot) as field seperator make string as follows "mv filename.type filename_big.type"
+   4) execute output of the last command using system in awk
+
+
+

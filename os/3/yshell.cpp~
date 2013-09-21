@@ -1,0 +1,114 @@
+#include<iostream>
+#include<string.h>
+#include<sys/wait.h>
+#include<sys/types.h>
+#include<vector>
+#include<stdio.h>
+#include<unistd.h>
+#include<string>
+#include<stdlib.h>
+#include "yshell.h"
+#define SHELL_NAME "YShell"
+#define SO 1
+#define SI 0
+#define WEL_MSG  "----------Welcome to YShell-----------"
+
+vector<string> history;
+unsigned int numHistory;
+
+using namespace::std;
+
+
+
+void process(vector<char**> cmds){
+        pid_t cid;
+	int fd[(cmds.size())*2];
+	char **argv;
+	int inBuilt;
+        
+
+	for(int i=0;i<cmds.size();i++){
+	
+		argv=cmds.at(i);
+
+	if(pipe(fd+(i*2)) < 0){
+		perror("ERROR in pipe() ");
+		return;
+	}
+        inBuilt=inBuiltCmd(*argv); 
+        //inBuilt=-1; 
+	if(inBuilt < 0){
+	cid=fork();
+	}else{
+		cid=inBuilt;
+	}
+	if(cid < 0){
+		cerr<<"forking child process failed "<<endl;
+                return;
+	}else if(cid == 0){
+		//cout<<"child: "<< i <<endl;
+		if(i != cmds.size()-1 ){
+			dup2(fd[2*i+1],SO);
+			if(i!=0)
+				dup2(fd[2*(i-1)],SI);
+		}else if(i!=0){
+
+			dup2(fd[2*(i-1)],SI);
+		}
+		//close(fd[0]);
+		//close(fd[1]);
+		//if(strcmp(*argv,"exit")==0) return;//terminate program 
+		cout<<"exec "<< i << *argv<<endl;
+		if( execvp(*argv,argv) < 0 )
+			 cerr<< *argv <<" : command not found"<<endl;
+	}else{
+		if(inBuilt < 0){
+		int status;
+		while(wait(&status) != cid);
+		//cout<<"parent:"<< i <<endl;
+		//close(fd[2*(i-1)]);
+		close(fd[2*i+1]);
+		}else{
+			handleBuiltIn(argv,inBuilt);
+	}
+	}
+
+	
+}
+}
+
+void processCmd(string input){
+	vector<char**> cmds;
+        cmds = parseCommand(input);
+	process(cmds);
+}
+void init(){
+//	string cwd;
+char *cd;
+//char *argv[10];
+string input;
+vector<char**> cmds;
+vector<int*> pipes;
+string exit("exit");
+
+
+while(1){
+	cd=get_current_dir_name();
+	cout<<SHELL_NAME<<":"<<cd<<"$ ";
+	getline(cin,input);
+	history.push_back(input);
+
+	if(exit.compare(input) == 0) return;
+        processCmd(input); 
+}
+}
+
+int main(){
+cout<<endl<<WEL_MSG<<endl<<endl;
+// load history
+importRC();
+unsigned int numHistory = loadHistory( history );
+init();
+dumpHistory(history,numHistory);
+return 0;
+}

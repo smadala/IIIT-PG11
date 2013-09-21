@@ -1,0 +1,4 @@
+color
+format when no -l
+output redirect
+

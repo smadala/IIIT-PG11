@@ -1,0 +1,10 @@
+/*This is a comment*/
+/* this is not a */comment
+/* this is not a *comment/
+/comment* this is not a */
+/* this is not a *comment/
+* this is not a *comment*/
+/* this is a comment */
+/*THIS IS  COMMENT*/
+/*THIS IS  COMMENT/*
+

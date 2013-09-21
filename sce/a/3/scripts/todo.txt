@@ -1,0 +1,12 @@
+Q1)
+preserve newlines at end of file
+
+Q5)
+white space in filename
+
+Q7)
+only files or include directory
+
+Q8)
+by access time or change time to remove files in Trash dir
+

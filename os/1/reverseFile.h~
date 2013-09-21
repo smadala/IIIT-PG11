@@ -1,0 +1,12 @@
+#ifndef REVERSEFILE_H
+#define REVERSEFILE_H
+
+char* strrev(char *orginal);
+
+long getBufferSize(long fileSize);
+
+void reverseFile(int srcFileDesc,int destFileDesc);
+
+char* getReversedFileName(char* orginalFileName);
+
+#endif

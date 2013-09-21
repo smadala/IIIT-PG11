@@ -1,0 +1,15 @@
+a.out
+b.out
+basic.cpp
+color.cpp
+Downloads
+dum
+itos.cpp
+out.txt
+scan.cpp
+test.cpp
+todo.txt
+v1.cpp
+v2.cpp
+wc
+win.cpp

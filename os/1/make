@@ -1,0 +1,2 @@
+app:
+	cc -o app main.c reversefile.c

@@ -1,0 +1,9 @@
+
+#define MIN_BUFFER 1024 //1KB
+#define MAX_BUFFER 104857600 //100MB
+#define REVERSED_FILE_PREFIX "reverse_"
+#define MAX_FILE_NAME_LENGTH 255
+
+int reverseFileContent(char *orginalFileName);
+
+

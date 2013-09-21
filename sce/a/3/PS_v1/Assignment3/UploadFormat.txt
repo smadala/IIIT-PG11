@@ -1,0 +1,25 @@
+STEPS TO BE FOLLOWED BEFORE UPLOADING SOLUTIONS FOR ASSIGNMENT 3 
+================================================================
+
+Your answers can be as these files only :
+1.sh 2.sh 3.sh 4.sh 5.sh 6.sh 7.sh 7Extra 8.sh 8Extra.sh 9a.sh 9b.sh 10.sh and any one of 11/12/13/14.sh
+
+--------------------------------------------------------------------------------------------------------
+
+Once you have your answers ready, follow these steps:
+
+
+1) Make a Directory : <rollnumber>_Assignment3
+2) Paste all your code in this directory
+3) Compress <rollnumber>_Assignment3 in tar.gz as <rollnumber>_Assignment3.tar.gz
+
+4) Run the validator script to verify your submission as
+
+   bash validator.sh <rollnumber> <rollnumber>_Assignment3.tar.gz
+   
+   
+--------------------------------------------------------------------------------------------------------
+
+If your sumbission is valid, then upload the file <rollnumber>_Assignment3.tar.gz to the courses portal
+
+PS: If you dont take care, you will get a zero.

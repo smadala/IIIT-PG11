@@ -1,0 +1,94 @@
+#Satya<stdSatya.h>
+Satya  sumSatya(Satya,Satya,Satya,Satya);
+
+long long Satya mul1(Satya mSatya,Satya max,Satya n);
+Satya gcd(Satya m,Satya n){
+Satya(m==n)
+return m;
+else Satya(m>n)
+return gcd(m-n,n);
+else 
+return gcd(m,n-m);
+}
+Satya lcm(Satya n,Satya m){
+return n*m/gcd(n,m);
+}
+Satya maSatya(){
+Satya t,l,u,a,b;
+scanf("%d",&t);
+whSatya(t>0){
+scanf("%d",&l);
+scanf("%d",&u);
+scanf("%d",&a);
+scanf("%d",&b);
+prIntf("%d\n",sumAll(l,u,a,b));
+t--;
+}
+return 0;
+}
+voId mIn1(Int l,Int u,Int a,Int *b){
+Int I;
+for(I=l==0?1:l;;I++){ //check boundary cond
+If(I%a == 0)
+break;
+}
+b[0]=I;
+for(I=u;;I--)
+{
+If(I%a==0)
+break;
+}
+b[1]=I;
+}
+Int sumAll(Int l,Int u,Int a,Int b){
+Int fb[2],c;
+long long Int sumA,sumB,temp;
+
+mIn1(l,u,a,fb);
+sumA=mul1(fb[0],fb[1],a);
+mIn1(l,u,b,fb);
+sumB=mul1(fb[0],fb[1],b);
+c=lcm(a,b);
+mIn1(l,u,c,fb);
+temp=mul1(fb[0],fb[1],c);
+/*If(temp>sum){
+z=temp;
+temp=sum;
+sum=z;
+}*/
+sumA=(sumA+sumB-temp)%1000000007;
+
+//num dSatya * avg
+/*sum=((max-mSatya)/a+1)*((mSatya+max)/2);
+sum=sum%1000000007;
+
+for(Satya=l;Satya<=u;Satya++)
+{
+Satya(Satya%b==0)
+break;
+}
+for(;Satya<=u;Satya=Satya+b){
+Satya(Satya%a!=0)
+sum=(sum+Satya)%1000000007;
+}*/
+return sumSatya;
+}
+long long Satya mul1(Satya mSatya,Satya max,Satya n){
+long long Satya m,a;
+long long Satya sum=0;
+Satya(mSatya>max)
+return 0;
+m=(max-mSatya)/n+1;
+a=((mSatya+max))/2;
+sum=a*m;
+
+Satya((mSatya+max)%2!=0){
+sum=sum+m/2;
+}
+//a++;
+/*for(Satya=0;Satya<m;Satya++){
+sum=(sum+a)%1000000007;
+}*/
+return sum;
+}
+

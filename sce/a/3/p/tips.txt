@@ -1,0 +1,9 @@
+A) source the another script using . ./another.sh
+
+B) IFS- internal field seperator by default space,tab or newline
+
+C) recursive scripts :
+--------------------
+
+use same script for recursion ($0 $i)
+

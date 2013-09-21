@@ -1,0 +1,114 @@
+1. Create a files with following file permissions:
+• 1a.txt - User can read and write, Other can only read.
+• 1b.txt - User can execute, Group can only read. Others can neither read, write or execute.
+• 1c.txt – User can only read. Group can only read. Others can neither read, write or execute.
+• 1d.txt – Nobody can read, write or execute
+A)a.	 touch 1a.txt
+	 chmod g-r 1a.txt 
+
+  b.     touch 1b.txt
+	 chmod u+x 1b.txt
+	 chmod g-w 1b.txt
+	 chmod o-r 1b.txt
+
+  c.	 touch 1c.txt
+	 chmod u-w 1c.txt
+	 chmod g-w 1c.txt
+	 chmod o-r 1c.txt
+
+  d.	 touch 1d.txt
+	 chmod a-rw 1d.txt
+
+2.Create a group 'group1'. Create a user 'user1' in that group.
+• Create file 2.txt
+• Change the permissions of this file so that Only owner can only read. Others cannot read,
+write or execute.
+• Change the owner of this file to user1.
+• Now try to read this file.
+
+
+A)   	 groupadd group1 (shoud be root?)
+ 	 useradd -g group1 user1  
+  a.	 touch file2.txt
+	 vim file2.txt 
+         (I am able to read file2.txt)
+
+  b.	 chmod go-r file2.txt    
+   	 chmod u-w file2.txt
+ 
+  c. 	 chown user1:group1 file2.txt
+
+  d.     cat file2.txt
+
+3.ssh into your IIIT web account. (Hint: your IIIT web account is <username>@web.iiit.ac.in)
+• Create a file 3.txt. Enter your roll no into it. (Hint: Use cat or vi)
+• Exit from your ssh session.
+• Secure copy the file 3.txt to your local machine.
+• Append your Name to the file. Then secure copy it back to your IIIT web account.
+
+
+A) 	 ssh satya.madala@web.iiit.ac.in       
+
+  a.	 mkdir -p asgn/sce/a/1	 
+	 cd asgn/sce/a/1/
+	 cat > file3.txt       
+         (201305508)
+  
+  b.     exit
+
+  c.	 scp satya.madala@web.iiit.ac.in:asgn/sce/a/1/file3.txt .
+
+  d.     vi file3.txt
+         Satya
+         scp ./file3.txt  satya.madala@web.iiit.ac.in:asgn/sce/a/1/
+
+4. Create a file 4.txt using vi editor and write one line in it. Save and close the file. Append
+another line to the same file.
+
+A) 	 vi 4.txt
+	 cat file3.txt >>4.txt
+
+5. Create a file 5a.txt. Enter one line into it. Cat files 5a.txt and 5b.txt (non existing file) Redirect
+the output to file 5o.txt and error message to a file called 5e.txt
+
+A)	 vi 5a.txt
+         cat 5a.txt 5b.txt >5o.txt 2>5e.txt
+
+6.Create a file 6a.txt with 20 lines in it. The contents of each line should be the line number.
+Copy line number 7 to 15 into another file 6b.txt.
+
+A)	  vim 6a.txt
+ 	  sed -n '7,15p' 6a.txt >6b.txt
+
+7. Split the file 6a.txt created above into two halves.
+
+A)	  split -l 10 6a.txt
+
+8. Sort the file 6a.txt created on question 6 in reverse order and redirect the output into a file 8.txt
+
+
+A)	  sort -gr 6a.txt > 8.txt
+
+9.Find the 5 largest files in your current working directory. Print only their Names, Size and
+Timestamps into a file 9.txt
+
+
+A)	  ls -lS|sed -n '2,6p'|awk '{print $9,$5,$6,$7,$8;}'>9.txt
+
+10. List all the files in the current folder on the output screen and also in a file named 10.txt without
+using redirection operator.
+
+A)	  ls -a|tee 10.txt
+
+11. Convert all the contents 10.txt to upper case and output to file 11.txt
+
+A)	  tr '[:lower:]' '[:upper:]' < 10.txt > 11.txt
+
+12. List all the files containing the string passwd in their filenames on your system
+
+A)	  sudo find / -name *passwd*
+
+13. Create a tar of all the files in your current folder from the terminal.
+
+A)	  tar -cvf 13q.tar.gz .
+

@@ -1,0 +1,1 @@
+-rw-rw-r-- 1 satya satya 1310 Aug 18 14:59 4_avg.c
