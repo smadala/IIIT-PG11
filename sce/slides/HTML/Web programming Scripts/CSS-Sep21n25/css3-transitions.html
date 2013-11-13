@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+ 
+<html>
+     
+    <head>
+ 
+        <title>Transitions Using CSS3</title>
+ 
+        <style>
+             
+            div.first
+            {
+                width: 20px;
+                height: 20px;
+                margin: 20px auto;
+            }
+             
+            div.first div.second img
+            {
+                width: 20px;
+                height: 20px;
+                color: #fff;
+                padding: 10px;
+                border-radius: 5px;
+                margin-left: 0;
+                -webkit-transition: 3s linear;
+                -moz-transition: 3s linear;
+                -o-transition: 3s linear;
+                -ms-transition: 3s linear;
+                transition: 3s linear;
+            }
+             
+
+            div.first:hover div.second img
+            {
+                width: 240px;
+                height: 220px;
+                -webkit-transform:rotate(360deg);
+                -moz-transform:rotate(360deg);
+                -o-transform:rotate(360deg);
+                -ms-transform:rotate(360deg);
+                transform:rotate(360deg);
+            }
+             
+        </style>
+     
+    </head>
+    <body>
+ 
+        <p>Hover over the image to see the effect</p>
+        <div class="first">
+            <div class="second">
+		
+	<img src="bulletpoint.gif" width="20" height="20"/>
+            </div>
+        </div>
+ 
+    </body>
+     
+</html>

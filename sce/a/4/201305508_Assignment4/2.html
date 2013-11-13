@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<meta charset="UTF-8">
+	<link type="text/css" href="2.css" rel="stylesheet" >
+<script>
+function addNote() 
+{
+var time=new Date();
+var note=document.getElementById("note").value;
+var title=document.getElementById("title").value;
+document.getElementById("notes").innerHTML="<fieldset class=first>"+"<fieldset class=second>"+title+"</fieldset>"+"<p><span class='date'>"+time.toUTCString()+"</spna></p>"+note+"</fieldset><br>"+document.getElementById("notes").innerHTML;
+
+document.getElementById("title").value="";
+document.getElementById("note").value="";
+
+}
+</script>
+	<title>2</title>
+</head>
+
+<body>
+	<h1>Notes</h1>
+
+<div>
+	<fieldset class="page">
+		<p>
+		<label for="title">Title </label>
+		<input id="title" type="text" />
+		</p>
+		<p>
+		<label for="note" >Note</label>
+		<textarea rows="2" cols="20" id="note"></textarea>
+		</p>
+		<input type="submit" value="Submit" style="margin-left:80px" onclick="addNote()"/>
+	</fieldset>
+	<br/>
+</div>
+
+<div id="notes">
+		
+</div>
+
+</body>
+
+</html>

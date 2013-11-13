@@ -1,0 +1,9 @@
+def prime(n):
+#	n = request.args(0)
+	for j in range(2,n):
+		if n%j==0:
+                	return 'False'
+	return 'True'
+
+x = prime(3)
+print x

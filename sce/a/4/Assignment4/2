@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>3</title>
+	<script type="text/javascript">
+	var numberOfDays=[31,29,31,30,31,30,31,31,30,31,30,31];
+	function enableDay(){
+		var mon=document.getElementById("mon").value;
+		var day=document.getElementById("day");
+		if( !mon){
+			day.innerHTML="<option value =""> --Day-- </option>";
+			day.disabled=true;
+			return;
+
+		}
+		days=numberOfDays[mon-1];
+		day.disabled=false;
+		var opt="";
+		for(var i=1;i<=days;i++){
+			opt+="<option value ="+ i +">"+ i + "</option>";
+		}
+		day.innerHTML=opt;
+	}
+	function needTobeLeapYear(){
+			var mon=document.getElementById("mon").value;
+			var day=document.getElementById("day").value;
+			return mon==2 && day==29;
+	}
+	function enableYear(){
+		var year=document.getElementById("year");
+		year.disabled=false;
+		var isLeap=needTobeLeapYear();
+		for(var i=1988;i<=2010;i++){
+			if(isLeap ){
+				if ( i%400 == 0 || (i%100 != 0 && i%4==0 ) ) {
+					opt+="<option value ="+ i +">"+ i + "</option>";
+					i+=3;
+				}
+				continue;
+			}else{
+					opt+="<option value ="+ i +">"+ i + "</option>";
+			}
+		}
+		year.innerHTML=opt;
+
+	}
+	function dob(){
+		var mon=document.getElementById("mon");
+		for(var i=1;i<=12;i++){
+			var x=document.createElement("option");
+			x.value=i;
+			x.text=i;
+			mon.appendChild(x);
+		}
+/*		var year=document.getElementById("year");
+		for(var i=1988;i<=2010;i++){
+			var x=document.createElement("option");
+			x.value=i;
+			x.text=i;
+			year.appendChild(x);
+		}*/
+	}
+	function onSport(){
+		var sport=document.getElementById("sports");
+		var stadium=document.getElementById("stadium");
+		if (sport.value == "cricket" ){
+		 stadium.innerHTML = '<option value="1"> Wan</option> <option value="2"> Fer</option> <option value="3"> Eden</option>' ;
+		}else if(sport.value == "Football" ){
+		 stadium.innerHTML = '<option value="1"> f1</option> <option value="2"> F2</option> <option value="3"> f3</option>' ;
+		}else{
+		 stadium.innerHTML = '<option value="1"> t1</option> <option value="2"> t2</option> <option value="3"> t3</option>' ;
+		}
+
+	}
+	function validateName(){
+		var name=document.getElementById("name").value;
+		var err_name=document.getElementById("err_name");
+		if( name == "" || name == null)
+		{
+			err_name.innerHTML="Missing ";
+			return false;
+		}else{
+				 var emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;  
+			var suc= emailPattern.test(name);   
+			if(suc){
+				err_name.innerHTML="";
+				return true;
+			}
+			else
+				err_name.innerHTML="Missing ";
+			return false;
+		}
+
+	}
+
+	function validate(){
+		if(validateName()){
+			alert("submitted");
+			return true;
+		}else{
+			return false;
+		}
+		
+	}
+
+	</script>
+</head>
+<body onload="dob()">
+	<form action="pro.py" method="post" onsubmit="return false;">
+		<p>
+		<label for="name"> Name: </label>
+		<input type="text" id="name"/>
+		<br/>
+		<label id="err_name" style="color:red"></label>
+		</p>
+
+		<p>
+		<label> DOB: </label>
+
+		<select id="mon" onchange=enableDay()>
+		<option value="">---Month----</option>
+		</select>
+
+		<select id="day" disabled="disabled" onchange=enableYear()>
+		<option value="" >---Day----</option>
+		</select>
+
+		<select id="year" disabled="disabled">
+		<option value="">---Year----</option>
+		</select>
+
+		</p>
+		
+		<p>
+		<label for="pass"> Password: </label>
+		<input type="password" id="pass"/>
+		</p>
+
+		<p>
+		<label>Confirm Password:</label>
+		<input type="password" id="conpass"/>
+		</p>
+
+		<label> sports: </label>
+		<select id="sports" onchange="onSport()" >
+		<option value="cricket"> Cricket </option>
+		<option value="Football"> Football </option>
+		<option value="Tennis"> Tennis </option>
+		</select>
+
+		<p>
+		<label > Stadium</label>
+		<select id="stadium">
+		<option value="1"> Wan</option> 
+		<option value="2"> Fer</option> 
+		<option value="3"> Eden</option> 
+		</select>
+		</p>
+
+		<input type="submit" onclick="validate()"/>
+		
+	</form>
+
+</body>
+</html>

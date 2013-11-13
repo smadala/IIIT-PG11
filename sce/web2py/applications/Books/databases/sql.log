@@ -1,0 +1,242 @@
+timestamp: 2013-11-07T10:29:33.115029
+CREATE TABLE auth_user(
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    first_name CHAR(128),
+    last_name CHAR(128),
+    email CHAR(512),
+    password CHAR(512),
+    registration_key CHAR(512),
+    reset_password_key CHAR(512),
+    registration_id CHAR(512)
+);
+success!
+timestamp: 2013-11-07T10:29:33.261057
+CREATE TABLE auth_group(
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    role CHAR(512),
+    description TEXT
+);
+success!
+timestamp: 2013-11-07T10:29:33.372969
+CREATE TABLE auth_membership(
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    user_id INTEGER REFERENCES auth_user (id) ON DELETE CASCADE,
+    group_id INTEGER REFERENCES auth_group (id) ON DELETE CASCADE
+);
+success!
+timestamp: 2013-11-07T10:29:33.484925
+CREATE TABLE auth_permission(
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    group_id INTEGER REFERENCES auth_group (id) ON DELETE CASCADE,
+    name CHAR(512),
+    table_name CHAR(512),
+    record_id INTEGER
+);
+success!
+timestamp: 2013-11-07T10:29:33.597099
+CREATE TABLE auth_event(
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    time_stamp TIMESTAMP,
+    client_ip CHAR(512),
+    user_id INTEGER REFERENCES auth_user (id) ON DELETE CASCADE,
+    origin CHAR(512),
+    description TEXT
+);
+success!
+timestamp: 2013-11-07T10:29:33.742334
+CREATE TABLE auth_cas(
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    user_id INTEGER REFERENCES auth_user (id) ON DELETE CASCADE,
+    created_on TIMESTAMP,
+    service CHAR(512),
+    ticket CHAR(512),
+    renew CHAR(1)
+);
+success!
+timestamp: 2013-11-07T11:19:24.566391
+CREATE TABLE book(
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    name CHAR(512),
+    description TEXT,
+    author CHAR(512),
+    genre CHAR(512)
+);
+success!
+timestamp: 2013-11-07T11:21:12.476986
+CREATE TABLE publish(
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    book INTEGER REFERENCES book (id) ON DELETE CASCADE,
+    user_profile INTEGER REFERENCES user_profile (id) ON DELETE CASCADE,
+    price DOUBLE
+);
+success!
+timestamp: 2013-11-07T11:21:54.507029
+CREATE TABLE user_profile(
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    name CHAR(512),
+    email CHAR(512),
+    password CHAR(512)
+);
+success!
+timestamp: 2013-11-07T14:29:21.513461
+ALTER TABLE book ADD image_url CHAR(512);
+success!
+timestamp: 2013-11-07T18:54:04.128745
+ALTER TABLE book ADD user_profile INTEGER REFERENCES user_profile (id) ON DELETE CASCADE;
+timestamp: 2013-11-07T18:54:04.300752
+ALTER TABLE book ADD price DOUBLE;
+timestamp: 2013-11-07T18:54:04.447614
+ALTER TABLE book ADD image CHAR(512);
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+timestamp: 2013-11-09T01:19:04.832378
+ALTER TABLE auth_user ADD phone CHAR(512);
+success!
+timestamp: 2013-11-09T01:19:05.058804
+ALTER TABLE book ADD auth_user INTEGER REFERENCES auth_user (id) ON DELETE CASCADE;
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+timestamp: 2013-11-09T13:54:28.651681
+CREATE TABLE publish_book(
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    name CHAR(512),
+    description TEXT,
+    author CHAR(512),
+    genre CHAR(512),
+    price DOUBLE,
+    image CHAR(512),
+    auth_user INTEGER REFERENCES auth_user (id) ON DELETE CASCADE
+);
+success!
+timestamp: 2013-11-09T16:03:49.571528
+ALTER TABLE publish_book ADD user_id INTEGER REFERENCES auth_user (id) ON DELETE CASCADE;
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!

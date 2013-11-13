@@ -1,0 +1,27 @@
+<!DOCTYPE html> 
+
+<!-- Frames can be used to design layouts -->
+ 
+<html>
+<head>
+<title>Frames example</title>
+</head>
+
+<frameset rows=30%,60%,10%" frameborder="1">
+    <frame src="top_frame.htm" scrolling="no" />		<!-- Each frame represented by the <frame> tag --> 
+    <frame src="content_frame.htm" />
+    <frame src="bottom_frame.htm" />
+
+    <noframes>                                   <!-- this provides a message for browsers that do not support frames --> 
+
+<body>
+Your browser does not support frames.
+</body>
+
+    </noframes>
+
+
+</frameset>
+
+
+</html>

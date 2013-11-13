@@ -1,0 +1,88 @@
+body{
+background: -webkit-linear-gradient(#E9D369, #DDA064); /* For Safari */
+
+background: -o-linear-gradient(#E9D369, #DDA064); /* For Opera 11.1 to 12.0 */
+background: -moz-linear-gradient(#E9D369, #DDA064); /* For Firefox 3.6 to 15 */
+background: linear-gradient(#E9D369, #DDA064); /* Standard syntax (must be last) */
+       
+margin:0px;
+}
+#header{
+width:100%;
+position:fixed;
+top:0px;
+left:0px;
+background-color:#614c4c;
+height:27px;
+padding:0;
+}
+#footer{
+width:100%;
+position:fixed;
+bottom:0px;
+left:0px;
+background-color:#614c4c;
+height:30px;
+padding:0;
+}
+#header ul,#footer ul{
+	list-style:none;
+height:100%;
+margin:0;
+}
+#header li,#footer li{
+display:inline;
+	list-style:none;
+width:25%;
+}
+#header a,#footer a{
+      text-decoration:none;
+	text-align:center;
+	border-right-style:solid ;
+	border-right-width:1px ;
+	border-right-color:white;
+padding:0 8.1% 7px;
+color:#2F2F2F;
+}
+#header a:hover,#footer a:hover{
+background:white;
+
+}
+#list {
+      text-align:center;
+}
+#list img,h3{
+}
+#list h1{
+padding:10px;
+}
+#pizza{
+float:left;
+width:33%;
+}
+#oil{
+float:left;
+width:33%;
+}
+#pasta{
+float:left;
+width:33%;
+}
+#float{
+clear:both;
+}
+aside{
+float:left;
+height:550px;
+width:40%;
+      padding-left:20px;
+}
+.middle{
+	border-right-style:solid;
+	border-right-width:2px;
+	border-right-color:#fff;
+	border-left-style:solid;
+	border-left-width:2px;
+	border-left-color:#fff;
+}
+

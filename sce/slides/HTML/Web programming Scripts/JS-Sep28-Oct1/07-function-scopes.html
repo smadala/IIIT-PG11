@@ -1,0 +1,40 @@
+<html>
+
+<head>
+<title> Variable Scopes in functions </title>
+</head>
+
+<body>
+
+	<script>
+	alert ("n is " + n);	
+	var n = 2;
+		
+		function func1 ()
+		{
+		alert ("In func1, n is " + n);
+		}
+
+	function func2 ()
+	{
+	var n = 4;
+	alert ("In func2, n is " + n);
+	}
+
+		function func3 ()
+		{
+		alert ("In func3, n is " + n);
+		n = 1;
+		}
+
+	alert("Outside, n is " + n);
+
+	func1();
+	func2();
+	func3();
+	alert("Outside, n is " + n); 
+
+	</script>
+
+</body>
+</html>

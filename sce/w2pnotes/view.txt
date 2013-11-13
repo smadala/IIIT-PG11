@@ -1,0 +1,55 @@
+
+{{}} - executes python code
+	response.write(text,escape=False)
+{{=}} - if starts with python code
+	response.write(expression,escape=True)
+
+{{include 'default/otherview.html'}}
+
+everythong above {{include}} replaces {{extend x}}
+everything below {{include}} placed at the bottom
+
+
+html helper
+	
+	A(),P(),DIV().SPAN(),FROM(),INPUT()...
+
+	A('a search engine',_href='http://google.co.in')
+	attributes starts with '_'  symbol
+
+	DIV(P('bla bla')).xml() '<div><p> bla bla</p></div>'
+	DIV('<p>bla bla</p>').xml() '<div> &lt;p&gt....'
+
+	to xml escape
+	XML('<foo><bar>bla</bar> bla </foo>')
+
+
+
+	form=Form(
+			INPUT(_type='text', _name='mytext'),
+			INPUT(_type='submit')
+		 )
+	if form.accepts(request.vars,session,formname='teresa');
+
+	return {'form':form}
+
+	URL('thing','groundControl', 'majorTom');
+# /thing/groundControl/majorTom
+
+	URL('thing', 'groundControl', 'majorTom',
+			args=['foo','bar'],
+			vars={'yuri':3},
+			host=True
+	   )
+	host=True makes absolute url
+
+
+
+	raise HTTP(code,responseBodyString,**additionalHeaders)
+	raise HTTP(303,"Go here instead",Location="http://yahoo.com")
+	redirect("http://yagoo.com")
+
+
+#/thing/groundControl/majorTom/foo/bar?yuri=3
+	
+

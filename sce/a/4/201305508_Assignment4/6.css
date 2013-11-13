@@ -1,0 +1,46 @@
+body{
+margin:0;
+}
+#header{
+	background-image:url("ImagesQ6/header.png");
+		width:100%;
+height:15%;
+}
+#header h1{
+	text-align:center;
+	margin-top:0;
+}
+#aside{
+float:left;
+width:20%;
+      margin:20px;
+	padding:20px;
+border-style:solid;
+background-color:#64D3D6;
+}
+#aside ul{
+	padding-left:20px;
+
+}
+#aside li{
+	padding-left:10px;
+}
+#section h2{
+	padding-top:20px;
+}
+#footer{
+clear:both;
+left:0;
+position:fixed;
+width:100%;
+bottom:0;
+background:#64d3d6;
+}
+#footer h3{
+	 text-align:center;
+	 margin-top:0;
+	 margin-bottom:3px;
+}
+.w3c{
+	padding-left:20%;
+}

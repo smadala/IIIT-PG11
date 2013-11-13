@@ -1,0 +1,31 @@
+<html>
+<head> 
+
+	<script>
+	function event1()          // a mouseover event 
+	{
+	alert("Why are you touching me, dude? I am just a link :) ")
+	// alert(event.type);
+	}
+</script>
+
+</head> 
+
+<body onload="alert('Page is loaded')">          <!--  an onload event --> 
+
+<a href="www.google.com" onMouseOver="event1()"> Roll your mouse over me please please pleaaase </a> <p>
+
+<a href="www.google.com" onClick="alert('Who told you to click me? My bad, I did :P')" > Click me </a> <P>
+
+<form>
+<p> <input type='text' name='hola' value="notice my case change" size='20' onblur="this.value=this.value.toUpperCase();"/> </p>
+
+</form> 
+
+</body> 
+
+
+</html> 
+
+
+

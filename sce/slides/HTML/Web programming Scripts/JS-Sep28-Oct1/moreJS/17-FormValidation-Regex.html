@@ -1,0 +1,38 @@
+<html>
+
+<head>
+<title> JavaScript RegExp in Action </title> 
+
+	<script >
+	
+	function check()
+	{
+	
+	var pat = /^\d{3}$/ 				// input length be 3 digits
+
+	var str= document.MyForm.input1.value;
+	
+	alert ('You have entered: ' + str);
+	
+	if (str.search(pat) == -1)		 	// the search() method returns index of the match if found, -1 otherwise 
+	
+	//if (str.length != 3)
+	
+	alert("Please enter 3-digit numbers only!")
+	}
+	</script>
+
+
+<body>
+
+<form name="MyForm">
+
+<p> Enter a number: <input type="text" name="input1" size=10>  </p> 
+
+<p> <input type="button" onClick="check()" value="Verify"> </p> 
+
+</form>
+
+</body>
+
+</html> 

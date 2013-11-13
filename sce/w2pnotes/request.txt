@@ -1,0 +1,42 @@
+request
+	request.env
+		path_info "app/controller/action"
+		request_method "get"
+		server_protocol "HTTP/1.1"
+		http_host "127.0.0.1:8000"
+		http_accept "text/xml,text/html"
+
+	request.cookies (Cookie.SampleCookie)
+
+	request.now (datetime.datetime)
+
+	request.utcnow  ""
+
+	request.user_agent() (info about client os,browser,devicer dict)
+
+	request.ajax ( is ajax request boolean)
+
+	request.APPLICATION
+	request.controller
+	request.function
+	request.extension
+
+	request.get_vars (Storage - get parameters)
+	request.post_vars ( http post parameters)
+	request.vars( combination of both get and post vars)
+	request.args( action/arg1/arg2/arg3 list)
+
+	request.body (read-only file)
+
+
+Response
+	
+	response.headers (dictionary)
+	response.cookies 
+
+	response.status
+	response.view "default/index.html"
+	response.render(view,vars) "path to view, vars-dict)
+	response.write(str,escape=false) " escape -false display html true- display same string")
+
+

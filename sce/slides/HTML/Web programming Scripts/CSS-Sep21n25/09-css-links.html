@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+
+<!-- N.B. a:hover MUST come after a:link and a:visited &
+a:active MUST come after a:hover in the CSS definition  --> 
+
+<html>
+<head>
+<style>
+	/* for the first link */
+	#L1:link { background-color:#B2FF99;}    /* unvisited link */
+	#L1:visited { background-color:#FFFF85;} /* visited link */
+	#L1:hover { background-color:#FF704D;}   /* mouse over link */
+	#L1:active { background-color:#FF704D;}  /* selected link */
+
+    /* for the 2nd link */
+   #L2:link { color:blue;}      
+   #L2:visited { color:green;}  
+   #L2:hover { color:yellow;}  
+   #L2:active { color:red;}  
+</style>
+</head>
+
+<body>
+<p> <a id="L1" href="default.asp" target="_blank">Link 1</a> </p>
+
+<p> <a id="L2" href="default.asp" target="_blank">Link 2</a> </p>
+
+</body>
+</html>

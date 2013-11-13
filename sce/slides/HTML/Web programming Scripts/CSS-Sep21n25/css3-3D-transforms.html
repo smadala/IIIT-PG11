@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+ 
+<html>
+     
+    <head>
+ 
+        <title>3D Transforms Using CSS3</title>
+ 
+        <style>
+ 
+            #div_norotate
+            {
+                width:100px;
+                height:100px;
+                background-color:purple;
+                border:1px solid blue;
+                opacity:0.4;
+                filter:alpha(opacity=40);
+            }
+             
+            #div_rotatex
+            {
+               /* position:absolute; */
+                width:100px;
+                height:100px;
+                background-color:rgba(255,0,0,0.5);
+                border:1px solid #000000;
+                transform:rotateX(140deg);
+                -webkit-transform:rotateX(140deg);
+                -moz-transform:rotateX(140deg);
+            }
+             
+        </style>
+     
+    </head>
+    <body>
+ 
+        <div id="div_norotate"> original</div>
+        <div id="div_rotatex">After rotateX method</div>
+         
+    </body>
+     
+</html>

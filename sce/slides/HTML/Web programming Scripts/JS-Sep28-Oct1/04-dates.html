@@ -1,0 +1,29 @@
+<html>
+<head> 
+<title> The Date Object </title>
+</head> 
+
+<body>
+        <script>
+	var today = new Date();
+
+	var bdate1 = new Date ("Sep 28, 2013, 4:20:15"); 
+
+	var bdate2 = new Date ("Sep 10, 9999");		// no time 
+	
+	alert("Today is:  " + today);
+	
+	alert (bdate1.getDay() );
+	
+	alert (bdate2.getFullYear() ); 
+ 
+	today.setFullYear(2100,1,5);
+	
+	alert (today) ;	
+	</script>
+
+</body>
+
+
+</html>
+

@@ -1,0 +1,92 @@
+1.
+----------------------------------------------------------------------
+user is typing a sentence using his keyboard. He uses only the keys, 'a' - 'z', H (home) and E(end). Given the sequence of key presses, find the line that is printed on the screen finally. Initially, a cursor is placed at the beginning of empty line and the following actions are performed with each key stroke.
+
+ - when 'a'-'z' is pressed, its printed at current cursor position after moving the rest of the string to right. For eg. If the current cursor position is at t in the string "deter", pressing a 'x' key results in the string "dexter".
+
+ - when 'H' is pressed, cursor moves to the beginning. For eg: pressing 'H' when we have "apple" results in string "apple"
+
+ - when 'E' is pressed, cursor moves to the end of the string. For eg: pressing 'E' when we have "apple" results in string "apple "
+
+ Its just like any normal editors we use. Try it out pressing 'a' - 'z', Home and End keys to get a feel of it :)
+ Use only C to code this problem. For other problems you can use C/C++
+ Input:
+ Only one line, contains a long string of at most 100000 valid characters
+
+ Output:
+ Print the final string in a single line, followed by a '\n' ( just print a new line, no need to display '\n' )
+
+ Constraints:
+ Time Limit : 1s
+ Sample Case 1:
+
+ Input:
+ atHc
+
+ Output:
+ cat\n
+
+ Explanation:
+ " " → "a " → "at " → "at" → "cat"
+
+
+ Sample Case 2:
+
+ Input:
+ rHsEocHpEkHaEs
+
+ Output:
+ apsrocks\n
+
+ Explanation:
+ Of course, whats there to explain... just experience it ! 
+------------------------------------------------------------------------------
+ 2
+ -----------------------------------------------------
+
+ Adam, our ancestor, was on his way to Eve with “the” apple. On the way he saw ‘N’ trees
+  located on a straight line in a jungle with heights H1, H2, H3...… HN respectively.
+   Two monkeys A and B are sitting on trees Ta and Tb (1 <= a < b <= N) respectively.
+    A will always be on the tree with smaller index than of B. To get passed Adam has to
+     offer them “the” apple. Monkeys will accept "the" apple, split it in two halves and 
+     let Adam go if they have seen each other on trees, otherwise they will start
+      fighting for apple and Adam can run away with apple as they are busy fighting.
+
+
+      Two monkeys can see each other only if there is no tree Tk in between Ta and
+       Tb(a < k < b) such that its height Hk is higher than any of Ta and Tb. Technically speaking 
+       monkeys cannot see each other if Hk>Ha or Hk>Hb(let’s not go with the fundamentals of Maths for this question).
+
+       Your task is to tell in how many possible situations Adam would be able to run
+        away with “the” apple and make the legend happen :)
+	Input Specification:
+
+	First line contains an integer N (2 <= N <= 500,000), the number of trees in line.
+	 Each of the following N lines contains a single integer, the height of a tree, given in the order 
+	 in which they are located in line. Each height is an integer that fits in an 'int' range.
+	 Output Specification:
+
+	 Print the number of possible situations in which Adam can run away with apple,
+	  followed by a '\n' ( just print a new line, no need to display '\n' ).
+	  Sample Input:
+
+	   
+	  6
+	  4
+	  3
+	  5
+	  2
+	  2
+	  5
+	  Sample Output:
+
+	   
+	  6
+	  Timelimit: 1s
+	  Expalanation:
+
+	  6 trees with heights (4,3,5,2,2,5) respectively. In 6 situations Monkeys won’t see each other.
+
+	  (Ta, Tb) = (1, 4) (1, 5) (1, 6) (2, 4) (2, 5) (2, 6) corresponding (Ha, Hb) would be (4,2) (4,2) (4,5) (3,2) (3,2) (3,5)
+
+

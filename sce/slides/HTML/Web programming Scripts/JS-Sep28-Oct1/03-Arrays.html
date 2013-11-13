@@ -1,0 +1,35 @@
+<html>
+<head>
+<title> Javascript Arrays </title>
+</head> 
+
+<body>
+       <script>
+       var days=['Monday', 'Tuesday', 'Wednesday'];  		// same as:  var days = new Array ("Monday", "Tuesday", "Wednesday");
+        days[3]='Thursday';
+        days[6]='Sunday';
+       
+	document.write(days[1] + '<br>');
+
+     	document.write('<b>Length = </b>' + days.length + '<br>');
+
+	document.write(days[4] + '<br>'); 
+
+	document.write(days.indexOf('Monday') + '<br>'); 
+
+	days.reverse();			
+
+	document.write ('<b>Reversed: </b>  ' + days + '<br>');
+	
+	days.sort();     
+
+	document.write('<b>Sorted: </b>  ' + days + '<br>');              
+         
+        // Other array methods: join(), slice(), pop(), push() ...
+	</script>
+
+</body>
+
+
+</html>
+

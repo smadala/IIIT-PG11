@@ -1,0 +1,17 @@
+# coding: utf8
+# try something like
+@auth.requires_login()
+def publish():
+    form=SQLFORM(db.publish_book)
+    if form.process(dbio=False).accepted:
+           db.publish_book.insert(auth_user=auth.user.id , **dict(form.vars))#insert all the properties
+           response.flash="form accepted"
+    else:
+        response.flash="form has error"
+    return dict(form=form)
+
+@auth.requires_login()
+def all():
+      published_books=db(db.publish_book.auth_user == auth.user.id).select()
+      table= SQLTABLE(published_books,"publish")
+      return dict(table=table)

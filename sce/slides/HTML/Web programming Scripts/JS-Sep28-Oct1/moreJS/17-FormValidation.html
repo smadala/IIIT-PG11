@@ -1,0 +1,38 @@
+<html>
+<head>
+<title> Form Data Validation using JavaScript </title>
+
+	<script>
+	function validate()
+	{
+	if (document.myForm.fname.value=='')			
+	alert ('Name field can not be empty.');  
+	}
+	</script>
+
+</head>
+
+
+<body>
+
+<form name="myForm" method="post" onsubmit="return validate()">
+
+<p> Your Name: <input type="text" name="fname">  </p> 
+
+
+<p> 
+
+Your Country: <select name="country" class=required">		         <!-- Try validating the drop-down menu form control too --> 
+   <option value="-1" selected="selected">Select a country</option>	
+   <option value="1">USA</option>
+   <option value="2">Canada</option>
+   <option value="3">India</option>
+</p>
+
+<p> <input type="submit" value="Validate">  </p>
+
+</form>
+
+</body>
+
+</html>

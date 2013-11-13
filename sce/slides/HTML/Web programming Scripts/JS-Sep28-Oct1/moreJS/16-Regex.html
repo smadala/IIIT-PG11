@@ -1,0 +1,26 @@
+<html>
+<head>
+<title> Demo of JS Regexp </title>
+
+</head>
+
+<body>
+	<script>
+
+	var pat = /[A-Z]{3}/g; 			// matches ??
+
+	str = 'AAA Hello World ZZZ';
+
+	alert ('pat.test() ---> ' + pat.test(str) );		// test() - true/false 
+
+	// exec() - returns the matched text if regex matches, 'null' otherwise. 
+	
+	str = str.replace(pat, "***");
+
+	alert (str);
+
+	</script>
+
+</body>
+
+</html> 

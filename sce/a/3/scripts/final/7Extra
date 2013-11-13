@@ -1,0 +1,2 @@
+1.crontab -e 1 0 * * * 7.sh
+2.crontab -e 1 0 * * 1 7.sh

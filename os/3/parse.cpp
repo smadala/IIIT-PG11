@@ -7,7 +7,7 @@ using namespace::std;
 void handleTild(char *temp){
 	char *org=temp;
 	char *value;
-	value=(char*)calloc(
+//	value=(char*)calloc(
 	while(*(++temp) != '\0' ||
 	     		*temp != '/');
 

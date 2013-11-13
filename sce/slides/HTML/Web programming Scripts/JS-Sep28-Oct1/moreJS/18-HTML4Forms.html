@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+<title> Demo of HTML 4.x Form </title>
+<style>
+	#register {
+	background-color:#DDFFFF ;
+	width:50%;
+	border: solid red 3pt;
+	padding: 30px; 
+	}
+
+	#last {  
+	text-align:center;
+          }
+</style>
+
+</head>
+ 
+<body>
+
+<form id="register" method="post">
+<hgroup>
+<h1>Sign Up for FakeBook&reg</h1>
+<h2> It's fun and always will be. </h2>
+</hgroup>
+
+<p>
+<label for="register-name">Your name:</label>
+<input type="text" id="register-name" name="name" >
+</p>
+
+<p>
+<label for="address">Your email address:</label>
+<input type="text" id="address" name="address">
+</p>
+
+<p>
+<label for="url">Your website's URL:</label>
+<input type="text" id="url" name="url">
+</p>
+
+<p>
+<label for="password">Your Password (at least 6 characters, no spaces): </label> 
+<input type="password" id="password" name="password">
+</p>
+
+<p>
+<label for="cool">How cool are you? (On a scale of 1-10):</label>
+<input type="text" name="cool" id=cool">
+</p>
+
+<p>
+<label for="startdate">I want to be on FakeBook&reg starting from the date:</label>
+<input type="text" id="startdate" name="startdate">
+</p>
+
+<p>
+<label for="quantity">I want to receive  <input
+type="text" name="quantity" id="quantity"> doses of Living Bread each day.</label>
+</p>
+
+<p>
+<label for="upsell"> Sign me up for <cite> the Jumbo Fun Package too</cite></label>
+<input type="checkbox" id="jumbofun" name="jumbofun">
+</p>
+
+<p id="last">
+<input type="submit" id="register-submit" value="Sign Up">
+</p>
+
+</form>
+
+</body>
+
+</html>

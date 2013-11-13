@@ -1,0 +1,94 @@
+gluon.dal.DAL(connectionString)
+db=DAL('postgres://brain:pass@host:port/dbname')
+
+objects in model module accessable to controller and view modules
+
+DAL
+	DAL 		a connection
+	Table		a table in the scema
+	Field		a column of a table
+
+	Query 		the parts common to a SQL SELECT, UPDATE or DELETE
+	Set 		wraps a Query
+
+	Rows		the result of a query; a list of Row objects
+	Row		a single row returned by a query
+
+
+column types of Table
+	
+	string(upto 512 chars),
+	text(upto 65536 chars),
+	blob, 
+	boolean, 
+	integer (-1e100to 1e100),
+	double (-1e100 to 1e100),
+	datetime,
+	reference tableName
+
+
+	db.define_table('cat'
+			Field('name','string'),
+			Field('age','integer')
+			Field('cat_owner','reference cat_owner')
+		       )
+
+	db.define_table('cat_owner',
+			Field('name','string'),
+			Field('address','string')
+		       )
+
+	db.cats
+	db.cat_owner
+	db.cat_owner.name
+
+INSERT
+	db.cat_owner.insert(name='Jon Arbuckle', address='1313 Mockingbird Lane')
+	db.cat.drop()
+
+Query
+	== != > < >= <= overloaded
+
+
+	db.cat.id > 0 (cat WHERE cat.id >0 )
+
+	db.cat.id == 4 (cat WHERE cat.id=4)
+
+	db.cat.cat_owner==db.cat_owner.id
+	(cat INNER JOIN cat_owner ON cat.cat_owner =cat_owner.id)
+
+
+	query = (db.cat.id == 2) // create Query object
+	set = db(query) // construct set object
+	set.delete(),select,select(fields),update(fieldName=value) // execute query
+
+	rows=set.select()
+	row=rows[0]
+	row.lives 
+	set.select(db.cat.name,db.cat.lives)
+
+	if multiple tables join then field name stored with table name in row object
+
+	row.cat.lives
+
+	| & ~ operator are over loaded 
+
+	~(db.cat.cat_owner == db.cat_owner.id)
+# cat INNER JOIN cat_owner ON cat.cat_owner <> cat_owner.id
+	(db.cat.cat_owner == db.cat_owner.id) & (db.cat.name == 'Mittens')
+
+# cat INNER JOIN cat_owner ON cat.cat_owner == cat_owner.id AND cat.name = 'Mittens')
+
+
+	can join multiple tables
+
+	(db.cat.cat_owner == db.cat_owner.id) & (db.dog.name == 'Figo')
+# ((cat INNER JOIN cat_owner INSERT JOIN dog) 
+		ON cat.cat_owner = cat_owner.id AND dog.name === 'Fido')
+
+db.commit()
+db.rollback()
+
+gluon.tools.Auth, a class for user authentication 
+
+

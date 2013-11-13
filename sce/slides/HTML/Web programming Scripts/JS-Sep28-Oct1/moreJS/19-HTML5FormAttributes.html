@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+<title> Demo of HTML5 Attributes</title>
+<style>
+        #register {
+        background-color:#DDFFFF ;
+        width:50%;
+        border: solid red 3pt;
+        padding: 30px;
+        }
+
+        #last {
+        text-align:center;
+          }
+</style>
+</head>
+
+<body>
+
+<form id="register" method="post">
+<hgroup>
+<h1>Sign Up for FakeBook&reg</h1>
+<h2> It's fun and always will be. </h2>
+</hgroup>
+
+
+<p>
+<label for="register-name"> Your name:</label>
+<input type="text" id="register-name" name="name" required aria-required="true" >               <!-- the required attribute --> 
+</p>
+
+<p>
+<label for="address">Your email address:</label>
+<input type="text" id="address" name="address" multiple="on">                     <!-- the multiple attribute - "on" by default --> 
+</p>
+
+<p>
+<label for="url">Your website's URL:</label>
+<input type="text" id="url" name="url" placeholder="http://example.com">      		<!-- the placeholder attribute --> 
+</p>
+
+<p>
+<label for="password">Your password (at least 6 characters, no spaces):</label>	 	<!-- the pattern attribute --> 
+<input type="password" id="password" name="password" pattern="\S{6,}">
+</p>
+
+<p>
+<label for="cool"> How cool are you? (On a scale of 1-10):</label>
+<input type="text" name="cool" id=cool">
+</p>
+
+<p>
+<label for="startdate">I want to be on FakeBook&reg starting from the date:</label>
+<input type="text" id="startdate" name="startdate" placeholder="2013-10-01">
+</p>
+
+<p>
+<label for="quantity">I want to receive 
+<input type="text" name="quantity" id="quantity"> doses of <cite> Living Bread</cite> each day.</label>
+</p>
+
+<p>
+<label for="jumbo">Sign me up for <cite> the Jumbo Fun Package too</cite></label>
+<input type="checkbox" id="jumbo" name="jumbo" >
+</p>
+
+<p>
+<label for="favcolor">Your Favorite Color</label>
+<input type="text" list="colors" id="favcolor" name="favcolor">
+<datalist id="colors">
+<option value="Blue">
+<option value="Green">
+<option value="Pink">
+<option value="Purple">
+</datalist>
+</p>
+
+
+<p id="last">
+<input type="submit" id="register-submit" value="Sign Up" disabled>		<!-- the disabled attribute --> 
+</p>
+
+
+</form>
+
+
+</body>
+
+</html>

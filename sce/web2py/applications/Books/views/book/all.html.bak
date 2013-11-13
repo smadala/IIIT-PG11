@@ -1,0 +1,4 @@
+{{extend 'layout.html'}}
+<h1>Your published books</h1>
+{{=table}}
+{{=BEAUTIFY(response._vars)}}
